@@ -2,12 +2,12 @@
 # Install MOR — Morpheus Staked Inference CLI
 # Works on: macOS (ARM/Intel), Linux (x86_64), Chromebook (via Linux/Crostini)
 #
-# Usage: curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-homebrew-tap/main/install.sh | sh
+# Usage: curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/install.sh | sh
 
 set -e
 
 VERSION="0.1.0"
-REPO="https://github.com/drm3labs/drm3-homebrew-tap/releases/download/mor-v${VERSION}"
+REPO="https://github.com/drm3labs/drm3-releases/releases/download/mor-v${VERSION}"
 INSTALL_DIR="${INSTALL_DIR:-/usr/local/bin}"
 
 detect_platform() {
