@@ -1,0 +1,68 @@
+#!/bin/sh
+# Install MOR — Morpheus Staked Inference CLI
+# Works on: macOS (ARM/Intel), Linux (x86_64), Chromebook (via Linux/Crostini)
+#
+# Usage: curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-homebrew-tap/main/install.sh | sh
+
+set -e
+
+VERSION="0.1.0"
+REPO="https://github.com/drm3labs/drm3-homebrew-tap/releases/download/mor-v${VERSION}"
+INSTALL_DIR="${INSTALL_DIR:-/usr/local/bin}"
+
+detect_platform() {
+  OS=$(uname -s | tr '[:upper:]' '[:lower:]')
+  ARCH=$(uname -m)
+
+  case "$OS" in
+    darwin) OS="darwin" ;;
+    linux)  OS="linux" ;;
+    *)      echo "Unsupported OS: $OS"; exit 1 ;;
+  esac
+
+  case "$ARCH" in
+    x86_64|amd64)   ARCH="amd64" ;;
+    aarch64|arm64)   ARCH="arm64" ;;
+    *)               echo "Unsupported architecture: $ARCH"; exit 1 ;;
+  esac
+
+  # Linux ARM64 not yet available
+  if [ "$OS" = "linux" ] && [ "$ARCH" = "arm64" ]; then
+    echo "Linux ARM64 is not yet supported. Use x86_64."
+    exit 1
+  fi
+
+  BINARY="mor-${OS}-${ARCH}"
+}
+
+main() {
+  detect_platform
+
+  echo "Installing MOR v${VERSION} (${OS}/${ARCH})..."
+
+  TMPDIR=$(mktemp -d)
+  trap 'rm -rf "$TMPDIR"' EXIT
+
+  echo "Downloading ${BINARY}..."
+  curl -fsSL "${REPO}/${BINARY}" -o "${TMPDIR}/mor"
+  chmod +x "${TMPDIR}/mor"
+
+  # Install (may need sudo on Linux)
+  if [ -w "$INSTALL_DIR" ]; then
+    mv "${TMPDIR}/mor" "${INSTALL_DIR}/mor"
+  else
+    echo "Installing to ${INSTALL_DIR} (requires sudo)..."
+    sudo mv "${TMPDIR}/mor" "${INSTALL_DIR}/mor"
+  fi
+
+  echo ""
+  echo "MOR installed to ${INSTALL_DIR}/mor"
+  echo ""
+  echo "Get started:"
+  echo "  mor config set private-key  # Connect your wallet"
+  echo "  mor config set api-key      # Unlock inference (get key at drm3.network/login)"
+  echo "  mor serve                   # Start dashboard at http://localhost:19377"
+  echo ""
+}
+
+main
