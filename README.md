@@ -1,42 +1,85 @@
-# DRM3 Homebrew Tap
+# DRM3 Software Distribution
 
-Homebrew formulae, binary releases, and install scripts for DRM3 tools.
+Official binary releases and install scripts for DRM3 products.
 
-## Quick Install
+Homepage: [drm3.network](https://drm3.network)
 
-### macOS (Homebrew)
+---
+
+## MOR — Morpheus Local AI Inference
+
+Local AI gateway for [Morpheus](https://mor.org) decentralized inference. One binary, no dependencies. Connects your wallet directly to AI providers on Base chain.
+
+**Current release: v0.1.0**
+
+### Download
+
+| Platform | Download | Checksum |
+|----------|----------|----------|
+| macOS Apple Silicon (M1/M2/M3/M4) | [mor-darwin-arm64](https://github.com/drm3labs/drm3-homebrew-tap/releases/download/mor-v0.1.0/mor-darwin-arm64) | [sha256](https://github.com/drm3labs/drm3-homebrew-tap/releases/download/mor-v0.1.0/mor-darwin-arm64.sha256) |
+| macOS Intel | [mor-darwin-amd64](https://github.com/drm3labs/drm3-homebrew-tap/releases/download/mor-v0.1.0/mor-darwin-amd64) | [sha256](https://github.com/drm3labs/drm3-homebrew-tap/releases/download/mor-v0.1.0/mor-darwin-amd64.sha256) |
+| Linux x86_64 (Ubuntu, Debian, etc.) | [mor-linux-amd64](https://github.com/drm3labs/drm3-homebrew-tap/releases/download/mor-v0.1.0/mor-linux-amd64) | [sha256](https://github.com/drm3labs/drm3-homebrew-tap/releases/download/mor-v0.1.0/mor-linux-amd64.sha256) |
+| macOS Desktop App (.dmg) | [MOR_0.1.0_aarch64.dmg](https://github.com/drm3labs/drm3-mor-app/releases) | — |
+
+All releases: [github.com/drm3labs/drm3-homebrew-tap/releases](https://github.com/drm3labs/drm3-homebrew-tap/releases)
+
+### Install
+
+**macOS (Homebrew) — recommended:**
 
 ```bash
 brew tap drm3labs/drm3-homebrew-tap
 brew install mor
 ```
 
-### Linux / Ubuntu / Chromebook
+**macOS (Desktop App):**
+
+Download the `.dmg` above, open it, drag MOR to Applications. Launches with a dock icon and menu bar tray.
+
+**Linux / Ubuntu:**
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-homebrew-tap/main/install.sh | sh
 ```
 
-## Available Formulae
+**Chromebook:**
 
-| Formula | Description | Platforms |
-|---------|-------------|-----------|
-| `mor` | Local AI gateway for Morpheus decentralized inference | macOS, Linux |
+1. Settings → Advanced → Developers → Turn on Linux
+2. Open Terminal, then:
 
-## Platform Support
+```bash
+curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-homebrew-tap/main/install.sh | sh
+```
 
-| Platform | Architecture | Install Method |
-|----------|-------------|----------------|
-| macOS Apple Silicon (M1+) | ARM64 | `brew install mor` or install.sh |
-| macOS Intel | x86_64 | `brew install mor` or install.sh |
-| Linux | x86_64 | `brew install mor` or install.sh |
-| Chromebook | x86_64 (via Crostini) | install.sh |
+**Manual install (any platform):**
 
-## Binary Releases
+```bash
+# Download the binary for your platform (see table above)
+chmod +x mor-*
+sudo mv mor-* /usr/local/bin/mor
+mor --version
+```
 
-All compiled binaries are published to [Releases](https://github.com/drm3labs/drm3-homebrew-tap/releases).
+### Getting Started
 
-## More Info
+```bash
+# 1. Set your wallet private key
+mor config set private-key
 
-- Homepage: [drm3.network](https://drm3.network)
-- Install guide: [INSTALL.md](https://drm3.network/docs/install)
+# 2. Get an API key at https://drm3.network/login
+mor config set api-key
+
+# 3. Launch the dashboard
+mor serve
+# Open http://localhost:19377
+```
+
+Browse mode works without keys — explore models, providers, and pricing before committing.
+
+### Full Documentation
+
+See [INSTALL.md](https://drm3.network/docs/install) for detailed setup, CLI usage, environment variables, and troubleshooting.
+
+---
+
+*More products coming soon. This repo serves as the distribution hub for all DRM3 binaries and installers.*
