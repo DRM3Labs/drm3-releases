@@ -1,5 +1,5 @@
 # Homebrew formula for MOR CLI
-# Install: brew tap drm3labs/drm3-releases && brew install mor
+# Install: brew tap drm3labs/drm3 && brew install mor
 
 class Mor < Formula
   desc "Local AI gateway for Morpheus decentralized inference"
