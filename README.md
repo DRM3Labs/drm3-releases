@@ -5,7 +5,7 @@ Homebrew formulae for DRM3 tools.
 ## Install
 
 ```bash
-brew tap robertjchristian/drm3-homebrew-tap
+brew tap drm3labs/drm3-homebrew-tap
 brew install mor
 ```
 

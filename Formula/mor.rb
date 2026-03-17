@@ -1,7 +1,7 @@
 # Homebrew formula for MOR CLI
-# Install: brew tap robertjchristian/mor && brew install mor
+# Install: brew tap drm3labs/drm3-homebrew-tap && brew install mor
 #
-# To create the tap repo (robertjchristian/homebrew-tap), copy this file to:
+# To create the tap repo (drm3labs/drm3-homebrew-tap), copy this file to:
 #   Formula/mor.rb
 #
 # After each release, update the url and sha256 values.
