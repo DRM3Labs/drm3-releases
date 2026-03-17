@@ -1,41 +1,42 @@
 # DRM3 Homebrew Tap
 
-Homebrew formulae and binary releases for DRM3 tools.
+Homebrew formulae, binary releases, and install scripts for DRM3 tools.
 
-## Install
+## Quick Install
+
+### macOS (Homebrew)
 
 ```bash
 brew tap drm3labs/drm3-homebrew-tap
 brew install mor
 ```
 
-## Available Formulae
-
-| Formula | Description |
-|---------|-------------|
-| `mor` | Local AI gateway for Morpheus decentralized inference |
-
-## Usage
+### Linux / Ubuntu / Chromebook
 
 ```bash
-# Configure
-mor config set private-key    # Connect your wallet
-mor config set api-key        # Unlock inference (drm3.network/login)
-
-# Run
-mor serve                     # Dashboard at http://localhost:19377
-
-# Chat
-mor chat "Hello" --model llama-3.3-70b
+curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-homebrew-tap/main/install.sh | sh
 ```
 
-## Releases
+## Available Formulae
 
-Binary releases for all platforms are published to this repo's [Releases](https://github.com/drm3labs/drm3-homebrew-tap/releases) page.
+| Formula | Description | Platforms |
+|---------|-------------|-----------|
+| `mor` | Local AI gateway for Morpheus decentralized inference | macOS, Linux |
 
-| Platform | Binary |
-|----------|--------|
-| macOS Apple Silicon (M1+) | `mor-darwin-arm64` |
-| macOS Intel | `mor-darwin-amd64` |
-| Linux x86_64 | `mor-linux-amd64` |
-| Linux ARM64 | `mor-linux-arm64` |
+## Platform Support
+
+| Platform | Architecture | Install Method |
+|----------|-------------|----------------|
+| macOS Apple Silicon (M1+) | ARM64 | `brew install mor` or install.sh |
+| macOS Intel | x86_64 | `brew install mor` or install.sh |
+| Linux | x86_64 | `brew install mor` or install.sh |
+| Chromebook | x86_64 (via Crostini) | install.sh |
+
+## Binary Releases
+
+All compiled binaries are published to [Releases](https://github.com/drm3labs/drm3-homebrew-tap/releases).
+
+## More Info
+
+- Homepage: [drm3.network](https://drm3.network)
+- Install guide: [INSTALL.md](https://drm3.network/docs/install)
