@@ -10,22 +10,18 @@ class Mor < Formula
   on_macos do
     on_arm do
       url "https://github.com/drm3labs/drm3-homebrew-tap/releases/download/mor-v#{version}/mor-darwin-arm64"
-      sha256 "PLACEHOLDER"
+      sha256 "c7ddad3532356b7bb79396e0015086046e9cf0dc639dbba7c8184a39d040eb77"
     end
     on_intel do
       url "https://github.com/drm3labs/drm3-homebrew-tap/releases/download/mor-v#{version}/mor-darwin-amd64"
-      sha256 "PLACEHOLDER"
+      sha256 "fcab66dd4a776cb392c80fc337c82df8a5509806532c665a77267d1fdadb12da"
     end
   end
 
   on_linux do
-    on_arm do
-      url "https://github.com/drm3labs/drm3-homebrew-tap/releases/download/mor-v#{version}/mor-linux-arm64"
-      sha256 "PLACEHOLDER"
-    end
     on_intel do
       url "https://github.com/drm3labs/drm3-homebrew-tap/releases/download/mor-v#{version}/mor-linux-amd64"
-      sha256 "PLACEHOLDER"
+      sha256 "1ea467ee17029e016fe9ee15a5b9a560b545ffa209e5d5e6257e00f2ea7e290c"
     end
   end
 
