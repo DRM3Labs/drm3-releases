@@ -10,14 +10,20 @@ Rust-native local AI gateway. Connects your wallet to decentralized AI providers
 
 **Install:**
 
-| Platform | Command |
-|----------|---------|
-| macOS | `brew tap drm3labs/drm3 && brew install mor` |
-| macOS (desktop app) | [Download MOR_0.1.0.dmg](https://github.com/drm3labs/drm3-releases/releases/tag/mor-v0.1.0) |
+| Platform | How |
+|----------|-----|
+| Mac (Homebrew) | `brew tap drm3labs/drm3 && brew install mor` |
+| Mac (Desktop App) | [Download .dmg](https://github.com/drm3labs/drm3-releases/releases/tag/mor-v0.1.0) — drag to Applications, get dock icon + tray |
 | Linux / Ubuntu | `curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/install.sh \| sh` |
-| Chromebook | Enable Linux, then same as Linux above |
+| Chromebook | Settings → turn on Linux → open Terminal → same curl command as Linux |
 
-**Direct download:** [All v0.1.0 binaries](https://github.com/drm3labs/drm3-releases/releases/tag/mor-v0.1.0)
+**Direct downloads (v0.1.0):**
+
+| Platform | Download |
+|----------|----------|
+| Mac (Apple Silicon — M1/M2/M3/M4) | [mor-darwin-arm64](https://github.com/drm3labs/drm3-releases/releases/download/mor-v0.1.0/mor-darwin-arm64) |
+| Mac (Intel) | [mor-darwin-amd64](https://github.com/drm3labs/drm3-releases/releases/download/mor-v0.1.0/mor-darwin-amd64) |
+| Linux / Ubuntu / Chromebook | [mor-linux-amd64](https://github.com/drm3labs/drm3-releases/releases/download/mor-v0.1.0/mor-linux-amd64) |
 
 Requires a wallet with MOR tokens and ETH for gas on Base chain.
 
