@@ -1,67 +1,85 @@
 # DRM3 Releases
 
-Official distribution registry for the DRM3 ecosystem. Versioned binaries, install scripts, and Homebrew formulae.
+```bash
+brew tap drm3labs/drm3 && brew install mor
+```
 
-This is the canonical source for installing and upgrading DRM3 components. Source code lives in separate private repositories.
+or
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/install.sh | sh
+```
+
+---
+
+## What's Here
+
+| Package | What | Install |
+|---------|------|---------|
+| **mor** | Local AI gateway for Morpheus staked inference | `brew install mor` |
+| *venice* | Venice AI SDK (chat, images, TTS, video) | coming soon |
+| *inference-bus* | Multi-provider AI router | coming soon |
 
 ---
 
 ## MOR — Local AI Inference
 
-Rust-native local AI gateway. Connects your wallet to decentralized AI providers on the Morpheus network. One binary, all platforms.
+Rust-native gateway to decentralized AI. Connects your wallet to providers on the Morpheus network. One binary, all platforms.
 
 ### Install
 
 | Platform | Command |
 |----------|---------|
 | Mac (Homebrew) | `brew tap drm3labs/drm3 && brew install mor` |
-| Mac (Desktop App) | [Download .dmg](https://github.com/drm3labs/drm3-releases/releases/tag/mor-v0.1.0) |
+| Mac (Desktop) | [Download .dmg](https://github.com/drm3labs/drm3-releases/releases/tag/mor-v0.1.0) |
 | Linux / Ubuntu | `curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/install.sh \| sh` |
-| Chromebook | Settings → Enable Linux → Terminal → same curl command |
+| Chromebook | Enable Linux → Terminal → curl command above |
 
 ### Direct Downloads (v0.1.0)
 
 | Platform | Binary |
 |----------|--------|
-| Mac (Apple Silicon — M1/M2/M3/M4) | [mor-darwin-arm64](https://github.com/drm3labs/drm3-releases/releases/download/mor-v0.1.0/mor-darwin-arm64) |
-| Mac (Intel) | [mor-darwin-amd64](https://github.com/drm3labs/drm3-releases/releases/download/mor-v0.1.0/mor-darwin-amd64) |
+| Mac Apple Silicon | [mor-darwin-arm64](https://github.com/drm3labs/drm3-releases/releases/download/mor-v0.1.0/mor-darwin-arm64) |
+| Mac Intel | [mor-darwin-amd64](https://github.com/drm3labs/drm3-releases/releases/download/mor-v0.1.0/mor-darwin-amd64) |
 | Linux x86_64 | [mor-linux-amd64](https://github.com/drm3labs/drm3-releases/releases/download/mor-v0.1.0/mor-linux-amd64) |
-
-### Requirements
-
-- Wallet with MOR tokens
-- ETH for gas on Base chain
 
 ### Get Started
 
 ```bash
-mor config set private-key   # Connect your wallet
+mor config set private-key   # Connect wallet
 mor config set api-key       # Get key at drm3.network/login
-mor serve                    # Dashboard at http://localhost:19377
+mor serve                    # Dashboard at localhost:19377
 ```
+
+Requires MOR tokens + ETH for gas on Base.
 
 ---
 
-## Cashew — Morpheus Network Explorer
+## Cashew — Network Explorer
 
-Live blockchain explorer for the Morpheus AI network. Real-time sync, provider rankings, session analytics, MOR price.
+Live explorer for Morpheus AI network. Providers, sessions, analytics, MOR price.
 
 **[cashew.drm3.network](https://cashew.drm3.network)**
 
 ---
 
-## Structure
+## Release Structure
 
 ```
-/releases
-  mor-v0.1.0/
-    mor-darwin-arm64
-    mor-darwin-amd64
-    mor-linux-amd64
+releases/
+  mor/
+    v0.1.0/
+      mor-darwin-arm64
+      mor-darwin-amd64
+      mor-linux-amd64
+  venice/
+    v0.1.0/
+  inference-bus/
+    v0.1.0/
 ```
 
-Releases are immutable once published.
+Releases are immutable once published. Source lives in private repos.
 
 ---
 
-*[drm3.network](https://drm3.network) — programmable access to decentralized inference*
+*[drm3.network](https://drm3.network)*
