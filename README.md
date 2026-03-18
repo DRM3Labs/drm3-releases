@@ -33,8 +33,7 @@ Requires a wallet with MOR tokens and ETH for gas on Base chain.
 
 DRM3's TypeScript SDK that simplifies working with the Morpheus Lumerin Node. Handles session pooling, OpenAI-compatible routing, and wallet management.
 
-- [mor-diem-sdk](https://github.com/robertjchristian/mor-diem-sdk)
-- [Morpheus-Lumerin-Node](https://github.com/MorpheusAIs/Morpheus-Lumerin-Node) (upstream) · [DRM3 fork](https://github.com/robertjchristian/Morpheus-Lumerin-Node) (PR pending)
+- [Morpheus-Lumerin-Node](https://github.com/MorpheusAIs/Morpheus-Lumerin-Node) (upstream)
 
 ---
 
@@ -46,4 +45,4 @@ Live blockchain explorer for the Morpheus AI network. Real-time sync, provider r
 
 ---
 
-*More products coming. Watch this repo for releases.*
+*Watch this repo for releases.*
