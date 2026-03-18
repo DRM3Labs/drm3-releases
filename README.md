@@ -2,7 +2,19 @@
 
 Official binaries, installers, and Homebrew formulae for the DRM3 ecosystem.
 
-**Start with MOR**, the first DRM3-distributed binary for local access to Morpheus staked inference.
+## Packages
+
+| Package | Status | What |
+|---------|--------|------|
+| **[mor](#mor-local-ai-inference)** | **v0.1.0** | Local AI gateway for Morpheus staked inference |
+| venice | roadmap | Venice AI SDK (chat, images, TTS, video) |
+| inference-bus | roadmap | Multi-provider AI router |
+
+---
+
+## MOR: Local AI Inference
+
+The first DRM3-distributed binary. Rust-native gateway to decentralized AI. Connects your wallet to providers on the Morpheus network. One binary, all platforms.
 
 ```bash
 brew tap drm3labs/drm3 && brew install mor
@@ -16,22 +28,6 @@ curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/install
 
 Then get your API key at **[drm3.network](https://drm3.network)** to unlock inference.
 
----
-
-## Packages
-
-| Package | Status | What |
-|---------|--------|------|
-| **[mor](#mor--local-ai-inference)** | **v0.1.0** | Local AI gateway for Morpheus staked inference |
-| venice | roadmap | Venice AI SDK (chat, images, TTS, video) |
-| inference-bus | roadmap | Multi-provider AI router |
-
----
-
-## MOR: Local AI Inference
-
-Rust-native gateway to decentralized AI. Connects your wallet to providers on the Morpheus network. One binary, all platforms.
-
 ### Install
 
 | Platform | Command |
@@ -39,7 +35,7 @@ Rust-native gateway to decentralized AI. Connects your wallet to providers on th
 | Mac (Homebrew) | `brew tap drm3labs/drm3 && brew install mor` |
 | Mac (Desktop) | [Download .dmg](https://github.com/drm3labs/drm3-releases/releases/tag/mor-v0.1.0) |
 | Linux / Ubuntu | `curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/install.sh \| sh` |
-| Chromebook | Enable Linux → Terminal → curl command above |
+| Chromebook | Enable Linux, open Terminal, curl command above |
 
 ### Direct Downloads (v0.1.0)
 
