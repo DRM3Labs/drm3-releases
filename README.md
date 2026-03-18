@@ -1,5 +1,9 @@
 # DRM3 Releases
 
+Official binaries, installers, and Homebrew formulae for the DRM3 ecosystem.
+
+**Start with MOR** — the first DRM3-distributed binary for local access to Morpheus staked inference.
+
 ```bash
 brew tap drm3labs/drm3 && brew install mor
 ```
@@ -10,15 +14,17 @@ or
 curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/install.sh | sh
 ```
 
+Then get your API key at **[drm3.network/login](https://drm3.network/login)** to unlock inference.
+
 ---
 
-## What's Here
+## Packages
 
-| Package | What | Install |
-|---------|------|---------|
-| **mor** | Local AI gateway for Morpheus staked inference | `brew install mor` |
-| *venice* | Venice AI SDK (chat, images, TTS, video) | coming soon |
-| *inference-bus* | Multi-provider AI router | coming soon |
+| Package | Status | What |
+|---------|--------|------|
+| **[mor](#mor--local-ai-inference)** | **v0.1.0** | Local AI gateway for Morpheus staked inference |
+| venice | roadmap | Venice AI SDK (chat, images, TTS, video) |
+| inference-bus | roadmap | Multi-provider AI router |
 
 ---
 
@@ -69,13 +75,10 @@ Live explorer for Morpheus AI network. Providers, sessions, analytics, MOR price
 releases/
   mor/
     v0.1.0/
-      mor-darwin-arm64
-      mor-darwin-amd64
-      mor-linux-amd64
   venice/
-    v0.1.0/
+    v0.x.x/
   inference-bus/
-    v0.1.0/
+    v0.x.x/
 ```
 
 Releases are immutable once published. Source lives in private repos.
