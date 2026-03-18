@@ -17,7 +17,7 @@ Rust-native local AI gateway. Connects your wallet to decentralized AI providers
 
 TypeScript proxy and Go consumer node for Morpheus staked inference. The original open-source SDK stack — MOR DIEM handles session pooling and OpenAI-compatible routing, Lumerin Node handles blockchain comms.
 
-- [mor-diem-sdk](https://github.com/anthropics/mor-diem-sdk) · [Morpheus-Lumerin-Node](https://github.com/MorpheusAIs/Morpheus-Lumerin-Node)
+- [mor-diem-sdk](https://github.com/anthropics/mor-diem-sdk) · [Morpheus-Lumerin-Node](https://github.com/MorpheusAIs/Morpheus-Lumerin-Node) (upstream) · [fork](https://github.com/robertjchristian/Morpheus-Lumerin-Node) (PR pending)
 
 ### Cashew — Morpheus Network Explorer
 
