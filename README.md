@@ -2,7 +2,7 @@
 
 Official binaries, installers, and Homebrew formulae for the DRM3 ecosystem.
 
-**Start with MOR** — the first DRM3-distributed binary for local access to Morpheus staked inference.
+**Start with MOR**, the first DRM3-distributed binary for local access to Morpheus staked inference.
 
 ```bash
 brew tap drm3labs/drm3 && brew install mor
@@ -14,7 +14,7 @@ or
 curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/install.sh | sh
 ```
 
-Then get your API key at **[drm3.network/login](https://drm3.network/login)** to unlock inference.
+Then get your API key at **[drm3.network](https://drm3.network)** to unlock inference.
 
 ---
 
@@ -28,7 +28,7 @@ Then get your API key at **[drm3.network/login](https://drm3.network/login)** to
 
 ---
 
-## MOR — Local AI Inference
+## MOR: Local AI Inference
 
 Rust-native gateway to decentralized AI. Connects your wallet to providers on the Morpheus network. One binary, all platforms.
 
@@ -53,7 +53,7 @@ Rust-native gateway to decentralized AI. Connects your wallet to providers on th
 
 ```bash
 mor config set private-key   # Connect wallet
-mor config set api-key       # Get key at drm3.network/login
+mor config set api-key       # Get key at drm3.network
 mor serve                    # Dashboard at localhost:19377
 ```
 
@@ -61,7 +61,7 @@ Requires MOR tokens + ETH for gas on Base.
 
 ---
 
-## Cashew — Network Explorer
+## Cashew: Network Explorer
 
 Live explorer for Morpheus AI network. Providers, sessions, analytics, MOR price.
 
@@ -80,8 +80,6 @@ releases/
   inference-bus/
     v0.x.x/
 ```
-
-Releases are immutable once published. Source lives in private repos.
 
 ---
 
