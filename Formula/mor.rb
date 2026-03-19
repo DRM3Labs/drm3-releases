@@ -33,8 +33,9 @@ class Mor < Formula
   def post_install
     ohai "MOR installed! Get started:"
     ohai "  mor config set private-key  # Connect your wallet"
-    ohai "  mor config set api-key      # Unlock inference (get key at drm3.network/login)"
-    ohai "  mor serve                   # Start the dashboard at http://localhost:19377"
+    ohai "  mor serve                   # Dashboard at localhost:19377"
+    ohai ""
+    ohai "SDK key is auto-provisioned from your wallet — no manual setup needed."
   end
 
   test do

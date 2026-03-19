@@ -69,8 +69,9 @@ main() {
   echo ""
   echo "Get started:"
   echo "  mor config set private-key  # Connect your wallet"
-  echo "  mor config set api-key      # Unlock inference (get key at drm3.network/login)"
-  echo "  mor serve                   # Start dashboard at http://localhost:19377"
+  echo "  mor serve                   # Dashboard at http://localhost:19377"
+  echo ""
+  echo "SDK key is auto-provisioned from your wallet — no manual setup needed."
   echo ""
 }
 
