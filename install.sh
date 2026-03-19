@@ -6,7 +6,16 @@
 
 set -e
 
-VERSION="0.1.0"
+# Auto-detect latest version from GitHub, or override with MOR_VERSION env var
+if [ -n "$MOR_VERSION" ]; then
+  VERSION="$MOR_VERSION"
+else
+  VERSION=$(curl -sI https://github.com/drm3labs/drm3-releases/releases/latest 2>/dev/null | grep -i '^location:' | grep -oE '[^/]+$' | tr -d '\r' | sed 's/^mor-v//')
+  if [ -z "$VERSION" ]; then
+    echo "Could not detect latest version. Set MOR_VERSION manually."
+    exit 1
+  fi
+fi
 REPO="https://github.com/drm3labs/drm3-releases/releases/download/mor-v${VERSION}"
 INSTALL_DIR="${INSTALL_DIR:-/usr/local/bin}"
 
