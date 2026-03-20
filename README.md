@@ -36,7 +36,26 @@ curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/install
 | Mac (Desktop) | [Download .dmg](https://github.com/drm3labs/drm3-releases/releases/latest) |
 | Linux x86_64 | `curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/install.sh \| sh` |
 | Linux ARM64 | Same curl command (auto-detects architecture) |
+| Windows | Install WSL2 first (see below), then curl command above |
 | Chromebook | Enable Linux → open Terminal → curl command above |
+
+### Windows Install (via WSL2)
+
+MOR runs on Windows through WSL2 (Windows Subsystem for Linux). WSL2 runs a real Linux kernel — same binary, full performance.
+
+```powershell
+# Step 1: Install WSL2 (one time, from PowerShell as admin)
+wsl --install
+
+# Step 2: Restart your computer, open Ubuntu from Start menu
+
+# Step 3: Install MOR (inside Ubuntu terminal)
+curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/install.sh | sh
+mor config set private-key
+mor serve
+```
+
+Open `http://localhost:19377` in your Windows browser — WSL2 forwards ports automatically.
 
 ### Get Started
 
