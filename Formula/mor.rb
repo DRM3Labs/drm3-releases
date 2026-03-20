@@ -4,24 +4,24 @@
 class Mor < Formula
   desc "Local AI gateway for Morpheus decentralized inference"
   homepage "https://drm3.network"
-  version "0.1.3"
+  version "0.1.6"
   license "LicenseRef-Proprietary"
 
   on_macos do
     on_arm do
       url "https://github.com/drm3labs/drm3-releases/releases/download/mor-v#{version}/mor-darwin-arm64"
-      sha256 "99ab8b0bbdb280bef842ded22cf46eb906478f4d9ba8347d1c5b428413ec8bab"
+      sha256 "ddb63f5cf212b8b789c870c084e6661b24fd0e1cb48069d3761f4fae04cb5dbe"
     end
     on_intel do
       url "https://github.com/drm3labs/drm3-releases/releases/download/mor-v#{version}/mor-darwin-amd64"
-      sha256 "fde646a868bc9e6b2ad87b2bb04a0a4474de37d5a3c162addd55a39a9a2246ca"
+      sha256 "6744af6cdf0fb97b223952b535aadebf45df92239eb7a0ca220a5e6f98c26759"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/drm3labs/drm3-releases/releases/download/mor-v#{version}/mor-linux-amd64"
-      sha256 "1b818f286ca6425720e604b194c3e0ce4302f973fc9c42bc3e529edfe6b33d56"
+      sha256 "cad859e101da3c7b0dab1ea0f2ed4ed78db68fcc16d752c41eae5738369b1fff"
     end
   end
 
