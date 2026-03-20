@@ -35,11 +35,8 @@ detect_platform() {
     *)               echo "Unsupported architecture: $ARCH"; exit 1 ;;
   esac
 
-  # Linux ARM64 not yet available
+  # Linux ARM64 supported
   if [ "$OS" = "linux" ] && [ "$ARCH" = "arm64" ]; then
-    echo "Linux ARM64 is not yet supported. Use x86_64."
-    exit 1
-  fi
 
   BINARY="mor-${OS}-${ARCH}"
 }
