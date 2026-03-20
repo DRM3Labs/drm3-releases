@@ -6,15 +6,17 @@ Official binaries, installers, and Homebrew formulae for the DRM3 ecosystem.
 
 | Package | Status | What |
 |---------|--------|------|
-| **[mor](#mor-local-ai-inference)** | **v0.1.3** | Local AI gateway for Morpheus staked inference |
-| venice | roadmap | Venice AI SDK (chat, images, TTS, video) |
-| inference-bus | roadmap | Multi-provider AI router |
+| **[MOR](#mor-staked-inference-sdk)** | **v0.1.3** | Local AI gateway for Morpheus staked inference |
+| Venice Flux | roadmap | Venice AI SDK (chat, images, TTS, video) |
+| Inference Bus | roadmap | Multi-provider AI router |
 
 ---
 
-## MOR: Local AI Inference
+## MOR Staked Inference SDK
 
-The first DRM3-distributed binary. Rust-native gateway to decentralized AI. Connects your wallet to providers on the Morpheus network. One binary, all platforms.
+Rust-native local AI gateway. Connects your wallet to decentralized AI providers on the Morpheus network. One binary, all platforms. No middleman.
+
+### Install
 
 ```bash
 brew tap drm3labs/drm3 && brew install mor
@@ -26,57 +28,63 @@ or
 curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/install.sh | sh
 ```
 
-Then get your API key at **[drm3.network](https://drm3.network)** to unlock inference.
-
-### Install
+### Platforms
 
 | Platform | Command |
 |----------|---------|
 | Mac (Homebrew) | `brew tap drm3labs/drm3 && brew install mor` |
-| Mac (Desktop) | [Download .dmg](https://github.com/drm3labs/drm3-releases/releases/tag/mor-v0.1.3) |
-| Linux / Ubuntu | `curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/install.sh \| sh` |
-| Chromebook | Enable Linux, open Terminal, curl command above |
-
-### Direct Downloads (v0.1.3)
-
-| Platform | Binary |
-|----------|--------|
-| Mac Apple Silicon | [mor-darwin-arm64](https://github.com/drm3labs/drm3-releases/releases/download/mor-v0.1.3/mor-darwin-arm64) |
-| Mac Intel | [mor-darwin-amd64](https://github.com/drm3labs/drm3-releases/releases/download/mor-v0.1.3/mor-darwin-amd64) |
-| Linux x86_64 | [mor-linux-amd64](https://github.com/drm3labs/drm3-releases/releases/download/mor-v0.1.3/mor-linux-amd64) |
+| Mac (Desktop) | [Download .dmg](https://github.com/drm3labs/drm3-releases/releases/latest) |
+| Linux x86_64 | `curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/install.sh \| sh` |
+| Linux ARM64 | Same curl command (auto-detects architecture) |
+| Chromebook | Enable Linux → open Terminal → curl command above |
 
 ### Get Started
 
 ```bash
-mor config set private-key   # Connect wallet
-mor config set api-key       # Get key at drm3.network
+mor config set private-key   # Enter your wallet private key
 mor serve                    # Dashboard at localhost:19377
 ```
 
-Requires MOR tokens + ETH for gas on Base.
+That's it. Two commands. Your wallet is your identity, your NFT pass controls your stake capacity.
+
+Requires MOR tokens + ETH for gas on Base chain.
+
+### Access Passes (NFT)
+
+Your stake capacity is controlled by an NFT access pass on Base mainnet.
+
+| Tier | Stake Cap | Price |
+|------|-----------|-------|
+| Free | 20 MOR | Claim free (one per wallet) |
+| Bronze | 50 MOR | 5 MOR |
+| Silver | 100 MOR | 8 MOR |
+| Gold | 500 MOR | 30 MOR |
+| Platinum | 1,000 MOR | 50 MOR |
+| Diamond | 50,000 MOR | 2,000 MOR |
+
+Contract: [`0x019979cb44a1B8C938CcA5080F4664B29f17FEbE`](https://basescan.org/address/0x019979cb44a1B8C938CcA5080F4664B29f17FEbE) on Base mainnet.
+
+3% royalty on all transfers. Passes are splittable and mergeable.
 
 ---
 
 ## Cashew: Network Explorer
 
-Live explorer for Morpheus AI network. Providers, sessions, analytics, MOR price.
+Live blockchain explorer for the Morpheus AI network. Providers, sessions, analytics, MOR price.
 
 **[cashew.drm3.network](https://cashew.drm3.network)**
 
 ---
 
-## Release Structure
+## Links
 
-```
-releases/
-  mor/
-    v0.1.0/
-  venice/
-    v0.x.x/
-  inference-bus/
-    v0.x.x/
-```
+| | |
+|--|--|
+| Products | [drm3.network/products](https://drm3.network/products) |
+| Claim Pass | [drm3.network/claim](https://drm3.network/claim) |
+| Live Demo | [inference.drm3.network](https://inference.drm3.network) |
+| Explorer | [cashew.drm3.network](https://cashew.drm3.network) |
 
 ---
 
-*[drm3.network](https://drm3.network)*
+*[drm3.network](https://drm3.network) — DRM3 Labs Corp.*
