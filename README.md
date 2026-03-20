@@ -6,7 +6,7 @@ Official binaries, installers, and Homebrew formulae for the DRM3 ecosystem.
 
 | Package | Status | What |
 |---------|--------|------|
-| **[mor](#mor-local-ai-inference)** | **v0.1.1** | Local AI gateway for Morpheus staked inference |
+| **[mor](#mor-local-ai-inference)** | **v0.1.2** | Local AI gateway for Morpheus staked inference |
 | venice | roadmap | Venice AI SDK (chat, images, TTS, video) |
 | inference-bus | roadmap | Multi-provider AI router |
 
@@ -33,7 +33,7 @@ Then get your API key at **[drm3.network](https://drm3.network)** to unlock infe
 | Platform | Command |
 |----------|---------|
 | Mac (Homebrew) | `brew tap drm3labs/drm3 && brew install mor` |
-| Mac (Desktop) | [Download .dmg](https://github.com/drm3labs/drm3-releases/releases/tag/mor-v0.1.1) |
+| Mac (Desktop) | [Download .dmg](https://github.com/drm3labs/drm3-releases/releases/tag/mor-v0.1.2) |
 | Linux / Ubuntu | `curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/install.sh \| sh` |
 | Chromebook | Enable Linux, open Terminal, curl command above |
 
@@ -41,9 +41,9 @@ Then get your API key at **[drm3.network](https://drm3.network)** to unlock infe
 
 | Platform | Binary |
 |----------|--------|
-| Mac Apple Silicon | [mor-darwin-arm64](https://github.com/drm3labs/drm3-releases/releases/download/mor-v0.1.1/mor-darwin-arm64) |
-| Mac Intel | [mor-darwin-amd64](https://github.com/drm3labs/drm3-releases/releases/download/mor-v0.1.1/mor-darwin-amd64) |
-| Linux x86_64 | [mor-linux-amd64](https://github.com/drm3labs/drm3-releases/releases/download/mor-v0.1.1/mor-linux-amd64) |
+| Mac Apple Silicon | [mor-darwin-arm64](https://github.com/drm3labs/drm3-releases/releases/download/mor-v0.1.2/mor-darwin-arm64) |
+| Mac Intel | [mor-darwin-amd64](https://github.com/drm3labs/drm3-releases/releases/download/mor-v0.1.2/mor-darwin-amd64) |
+| Linux x86_64 | [mor-linux-amd64](https://github.com/drm3labs/drm3-releases/releases/download/mor-v0.1.2/mor-linux-amd64) |
 
 ### Get Started
 
