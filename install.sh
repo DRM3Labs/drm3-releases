@@ -65,8 +65,6 @@ main() {
   echo "  mor config set private-key  # Connect your wallet"
   echo "  mor serve                   # Dashboard at http://localhost:19377"
   echo ""
-  echo "SDK key is auto-provisioned from your wallet — no manual setup needed."
-  echo ""
 }
 
 main
