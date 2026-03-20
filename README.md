@@ -57,6 +57,13 @@ mor serve
 
 Open `http://localhost:19377` in your Windows browser — WSL2 forwards ports automatically.
 
+### macOS Note
+
+> **Apple Developer certification pending.** If macOS blocks the binary, Homebrew handles it automatically. For direct downloads, run:
+> ```bash
+> xattr -d com.apple.quarantine /usr/local/bin/mor
+> ```
+
 ### Get Started
 
 ```bash
