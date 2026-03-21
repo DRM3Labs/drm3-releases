@@ -1,14 +1,14 @@
 {
-  "version": "0.2.3",
-  "notes": "MOR v0.2.3",
-  "pub_date": "2026-03-21T03:27:39Z",
+  "version": "0.2.4",
+  "notes": "MOR v0.2.4",
+  "pub_date": "2026-03-21T04:24:19Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/drm3labs/drm3-releases/releases/download/mor-v0.2.3/MOR.app.tar.gz",
+      "url": "https://github.com/drm3labs/drm3-releases/releases/download/mor-v0.2.4/MOR.app.tar.gz",
       "signature": ""
     },
     "darwin-x86_64": {
-      "url": "https://github.com/drm3labs/drm3-releases/releases/download/mor-v0.2.3/MOR.app.tar.gz",
+      "url": "https://github.com/drm3labs/drm3-releases/releases/download/mor-v0.2.4/MOR.app.tar.gz",
       "signature": ""
     }
   }
