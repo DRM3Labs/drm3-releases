@@ -90,14 +90,14 @@ Every wallet gets **20 MOR** stake capacity free. NFT passes add more:
 | | Adds | Total | Cost |
 |--|------|-------|------|
 | Free tier | — | 20 MOR | Free (every wallet) |
-| Bronze NFT | +100 | 120 MOR | 8 MOR |
-| Silver NFT | +500 | 520 MOR | 30 MOR |
-| Gold NFT | +5,000 | 5,020 MOR | 200 MOR |
-| Diamond NFT | +25,000 | 25,020 MOR | 1,000 MOR |
+| Bronze NFT | +200 | 220 MOR | 5 MOR |
+| Silver NFT | +1,000 | 1,020 MOR | 20 MOR |
+| Gold NFT | +5,000 | 5,020 MOR | 80 MOR |
+| Diamond NFT | +20,000 | 20,020 MOR | 250 MOR |
 
 Bigger stake = longer sessions = less ETH gas. NFTs save money.
 
-Contract: [`0x019979cb44a1B8C938CcA5080F4664B29f17FEbE`](https://basescan.org/address/0x019979cb44a1B8C938CcA5080F4664B29f17FEbE) on Base mainnet.
+Contract: [`0x86Ee963906Ef62e7cd25949B07Cf9cB6DB0dc66B`](https://basescan.org/address/0x86Ee963906Ef62e7cd25949B07Cf9cB6DB0dc66B) on Base mainnet.
 
 3% royalty on all transfers. Passes are splittable and mergeable.
 
