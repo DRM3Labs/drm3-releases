@@ -16,7 +16,15 @@ Official binaries, installers, and Homebrew formulae for the DRM3 ecosystem.
 
 Rust-native local AI gateway. Connects your wallet to decentralized AI providers on the Morpheus network. One binary, all platforms. No middleman.
 
-### Install
+### Install (macOS — recommended)
+
+```bash
+brew tap drm3labs/drm3 && brew install --cask mor
+```
+
+One command. Installs the desktop app + `mor` CLI. No Gatekeeper warnings.
+
+### CLI Only (all platforms)
 
 ```bash
 brew tap drm3labs/drm3 && brew install mor
@@ -32,9 +40,9 @@ curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/install
 
 | Platform | Command |
 |----------|---------|
-| Mac (Homebrew) | `brew tap drm3labs/drm3 && brew install mor` |
-| Mac (Desktop) | [Download .dmg](https://github.com/drm3labs/drm3-releases/releases/latest) |
-| Linux x86_64 | `curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/install.sh \| sh` |
+| Mac (Desktop + CLI) | `brew tap drm3labs/drm3 && brew install --cask mor` |
+| Mac (CLI only) | `brew tap drm3labs/drm3 && brew install mor` |
+| Linux x86_64 | `brew install mor` or curl command above |
 | Linux ARM64 | Same curl command (auto-detects architecture) |
 | Windows | Install WSL2 first (see below), then curl command above |
 | Chromebook | Enable Linux → open Terminal → curl command above |
@@ -59,7 +67,7 @@ Open `http://localhost:19377` in your Windows browser — WSL2 forwards ports au
 
 ### macOS Note
 
-> **Apple Developer certification pending.** If macOS blocks the binary, Homebrew handles it automatically. For direct downloads, run:
+> **Install via Homebrew to avoid Gatekeeper warnings.** Homebrew automatically removes macOS quarantine. For direct binary downloads, run:
 > ```bash
 > xattr -d com.apple.quarantine /usr/local/bin/mor
 > ```
