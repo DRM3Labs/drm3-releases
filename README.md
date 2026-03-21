@@ -83,18 +83,19 @@ That's it. Two commands. Your wallet is your identity, your NFT pass controls yo
 
 Requires MOR tokens + ETH for gas on Base chain.
 
-### Access Passes (NFT)
+### Capacity & Access Passes
 
-Your stake capacity is controlled by an NFT access pass on Base mainnet.
+Every wallet gets **20 MOR** stake capacity free. NFT passes add more:
 
-| Tier | Stake Cap | Price |
-|------|-----------|-------|
-| Free | 20 MOR | Claim free (one per wallet) |
-| Bronze | 50 MOR | 5 MOR |
-| Silver | 100 MOR | 8 MOR |
-| Gold | 500 MOR | 30 MOR |
-| Platinum | 1,000 MOR | 50 MOR |
-| Diamond | 50,000 MOR | 2,000 MOR |
+| | Adds | Total | Cost |
+|--|------|-------|------|
+| Free tier | — | 20 MOR | Free (every wallet) |
+| Bronze NFT | +100 | 120 MOR | 8 MOR |
+| Silver NFT | +500 | 520 MOR | 30 MOR |
+| Gold NFT | +5,000 | 5,020 MOR | 200 MOR |
+| Diamond NFT | +25,000 | 25,020 MOR | 1,000 MOR |
+
+Bigger stake = longer sessions = less ETH gas. NFTs save money.
 
 Contract: [`0x019979cb44a1B8C938CcA5080F4664B29f17FEbE`](https://basescan.org/address/0x019979cb44a1B8C938CcA5080F4664B29f17FEbE) on Base mainnet.
 
