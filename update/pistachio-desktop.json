@@ -1,14 +1,14 @@
 {
-  "version": "0.3.1",
-  "notes": "MOR v0.3.1",
-  "pub_date": "2026-03-22T04:42:25Z",
+  "version": "0.3.2",
+  "notes": "MOR v0.3.2",
+  "pub_date": "2026-03-22T07:38:51Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/drm3labs/drm3-releases/releases/download/pistachio-v0.3.1/MOR.app.tar.gz",
+      "url": "https://github.com/drm3labs/drm3-releases/releases/download/pistachio-v0.3.2/MOR.app.tar.gz",
       "signature": ""
     },
     "darwin-x86_64": {
-      "url": "https://github.com/drm3labs/drm3-releases/releases/download/pistachio-v0.3.1/MOR.app.tar.gz",
+      "url": "https://github.com/drm3labs/drm3-releases/releases/download/pistachio-v0.3.2/MOR.app.tar.gz",
       "signature": ""
     }
   }
