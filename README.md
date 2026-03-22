@@ -6,7 +6,7 @@ Official binaries, installers, and Homebrew formulae for the DRM3 ecosystem.
 
 | Package | Status | What |
 |---------|--------|------|
-| **[MOR](#mor-staked-inference-sdk)** | **v0.2.8** | Local AI gateway for Morpheus staked inference |
+| **[MOR](#mor-staked-inference-sdk)** | **v0.3.0** | Local AI gateway for Morpheus staked inference |
 | Venice Flux | roadmap | Venice AI SDK (chat, images, TTS, video) |
 | Inference Bus | roadmap | Multi-provider AI router |
 
