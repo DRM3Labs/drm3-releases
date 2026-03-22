@@ -97,7 +97,7 @@ Every wallet gets **20 MOR** stake capacity free. NFT passes add more:
 
 Bigger stake = longer sessions = less ETH gas. NFTs save money.
 
-Contract: [`0x873791901411D2F0C4Bb65f0Bfa8aa5B3bB80Ac5`](https://basescan.org/address/0x873791901411D2F0C4Bb65f0Bfa8aa5B3bB80Ac5) on Base mainnet.
+Contract: [`0x0383d62447B806C385f78B4bF154157c8E821BFe`](https://basescan.org/address/0x0383d62447B806C385f78B4bF154157c8E821BFe) on Base mainnet.
 
 3% royalty on all transfers. Passes are splittable and mergeable.
 
