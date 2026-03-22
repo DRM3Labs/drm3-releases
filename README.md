@@ -117,7 +117,7 @@ Live blockchain explorer for the Morpheus AI network. Providers, sessions, analy
 |--|--|
 | Products | [drm3.network/products](https://drm3.network/products) |
 | Claim Pass | [drm3.network/claim](https://drm3.network/claim) |
-| Live Demo | [inference.drm3.network](https://inference.drm3.network) |
+| Live Demo | [pistachio.drm3.network](https://pistachio.drm3.network) |
 | Explorer | [cashew.drm3.network](https://cashew.drm3.network) |
 
 ---
