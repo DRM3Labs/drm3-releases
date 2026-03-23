@@ -6,9 +6,9 @@ Official binaries, installers, and Homebrew formulae for the DRM3 ecosystem.
 
 | Package | Status | What |
 |---------|--------|------|
-| **[Pistachio](#pistachio)** | **v0.3.5** | DRM3's Morpheus-compatible P2P inference client |
-| **[Connor](#connor-dns-signal-scanner)** | **v0.1.0** | DNS signal scanner with provenance |
-| **[Allen](#allen-dns-intelligence)** | **v0.1.0** | DNS intelligence and service fingerprinting |
+| **[Pistachio](#pistachio)** | **v0.3.7** | DRM3's Morpheus-compatible P2P inference client |
+| **[Connor](#connor-dns-signal-scanner)** | **v0.3.7** | DNS signal scanner with provenance |
+| **[Allen](#allen-dns-intelligence)** | **v0.3.7** | DNS intelligence and service fingerprinting |
 | Venice Flux | roadmap | Venice AI SDK (chat, images, TTS, video) |
 | Inference Bus | roadmap | Multi-provider AI router |
 
