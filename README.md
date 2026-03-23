@@ -35,7 +35,7 @@ brew tap drm3labs/drm3 && brew install pistachio
 or
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/products/pistachio/install.sh | sh
 ```
 
 ### Platforms
@@ -60,7 +60,7 @@ wsl --install
 # Step 2: Restart your computer, open Ubuntu from Start menu
 
 # Step 3: Install Pistachio (inside Ubuntu terminal)
-curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/products/pistachio/install.sh | sh
 pistachio config set private-key
 pistachio serve
 ```
@@ -109,7 +109,7 @@ Contract: [`0x052852CeE02511af995F4f24Ed9DA44d6b8b7De0`](https://basescan.org/ad
 
 Live blockchain explorer for the Morpheus AI network. Providers, sessions, analytics, MOR price.
 
-**[cashew.drm3.network](https://cashew.drm3.network)**
+**[cashew.explorer.drm3.network](https://cashew.explorer.drm3.network)**
 
 ---
 
@@ -135,8 +135,8 @@ Service fingerprinting and technology stack analysis. Consumes Connor's signal d
 |--|--|
 | Products | [drm3.network/products](https://drm3.network/products) |
 | Claim Pass | [drm3.network/claim](https://drm3.network/claim) |
-| Live Demo | [pistachio.drm3.network](https://pistachio.drm3.network) |
-| Explorer | [cashew.drm3.network](https://cashew.drm3.network) |
+| Live Demo | [pistachio.inference.drm3.network](https://pistachio.inference.drm3.network) |
+| Explorer | [cashew.explorer.drm3.network](https://cashew.explorer.drm3.network) |
 | DNS Scanner | [connor.dns.drm3.network](https://connor.dns.drm3.network) |
 | DNS Intel | [allen.dns.drm3.network](https://allen.dns.drm3.network) |
 

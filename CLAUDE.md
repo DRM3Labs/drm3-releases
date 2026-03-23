@@ -42,7 +42,7 @@ Users install via:
 brew tap drm3labs/drm3 && brew install pistachio
 
 # curl (Linux/Mac/Chromebook)
-curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/products/pistachio/install.sh | sh
 ```
 
 ## Releases
