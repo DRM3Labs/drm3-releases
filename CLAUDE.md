@@ -21,8 +21,16 @@ This is **the only public repo** in the DRM3 ecosystem. Everything here is visib
 drm3-releases/
 ├── README.md       # Product catalog, install instructions
 ├── install.sh      # Cross-platform curl installer
-└── Formula/
-    └── pistachio.rb # Homebrew formula for Pistachio CLI
+├── Formula/
+│   └── pistachio.rb # Homebrew formula for Pistachio CLI
+└── legal/
+    ├── TERMS.md         # General DRM3 terms
+    ├── PRIVACY.md       # General DRM3 privacy
+    ├── pistachio/       # Pistachio-specific legal
+    ├── cashew/          # Cashew-specific legal
+    ├── nft/             # NFT Pass-specific legal
+    ├── connor/          # Connor DNS scanner legal
+    └── allen/           # Allen DNS intelligence legal
 ```
 
 ## Install Flow
@@ -75,5 +83,8 @@ Formula downloads binaries from this repo's releases.
 |------|------|--------------------------|
 | `rusty-mor-staked-inference-sdk` | Pistachio CLI source | `pistachio-*` binaries |
 | `drm3-mor-app` | Tauri desktop app | `.dmg` releases |
+| `drm3-dns-scanner` | Connor + Allen source | CF Workers (no binaries — hosted services) |
 
 These are PRIVATE. Never reference them in this repo.
+
+**Note:** Connor and Allen are hosted Cloudflare Workers, not downloadable binaries. Their presence in this repo is for legal docs and product catalog only.

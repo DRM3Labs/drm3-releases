@@ -6,7 +6,9 @@ Official binaries, installers, and Homebrew formulae for the DRM3 ecosystem.
 
 | Package | Status | What |
 |---------|--------|------|
-| **[Pistachio](#pistachio)** | **v0.3.6** | DRM3's Morpheus-compatible P2P inference client |
+| **[Pistachio](#pistachio)** | **v0.3.5** | DRM3's Morpheus-compatible P2P inference client |
+| **[Connor](#connor-dns-signal-scanner)** | **v0.1.0** | DNS signal scanner with provenance |
+| **[Allen](#allen-dns-intelligence)** | **v0.1.0** | DNS intelligence and service fingerprinting |
 | Venice Flux | roadmap | Venice AI SDK (chat, images, TTS, video) |
 | Inference Bus | roadmap | Multi-provider AI router |
 
@@ -97,7 +99,7 @@ Every wallet gets **20 MOR** stake capacity free. NFT passes add more:
 
 Bigger stake = longer sessions = less ETH gas. NFTs save money.
 
-Contract: [`0x46239bc5dA5Fa2f5811D4226444E23Cf4e498763`](https://basescan.org/address/0x46239bc5dA5Fa2f5811D4226444E23Cf4e498763) on Base mainnet.
+Contract: [`0x052852CeE02511af995F4f24Ed9DA44d6b8b7De0`](https://basescan.org/address/0x052852CeE02511af995F4f24Ed9DA44d6b8b7De0) on Base mainnet.
 
 3% royalty on all transfers. Passes are splittable and mergeable.
 
@@ -111,6 +113,22 @@ Live blockchain explorer for the Morpheus AI network. Providers, sessions, analy
 
 ---
 
+## Connor: DNS Signal Scanner
+
+Deep DNS reconnaissance platform. Scans 1,000+ domains, resolves all record types, generates cryptographic provenance receipts for every observation.
+
+**[connor.dns.drm3.network](https://connor.dns.drm3.network)**
+
+---
+
+## Allen: DNS Intelligence
+
+Service fingerprinting and technology stack analysis. Consumes Connor's signal data to identify 80+ providers across DNS, email, hosting, CDN, and security categories. Migration detection and change alerts.
+
+**[allen.dns.drm3.network](https://allen.dns.drm3.network)**
+
+---
+
 ## Links
 
 | | |
@@ -119,6 +137,8 @@ Live blockchain explorer for the Morpheus AI network. Providers, sessions, analy
 | Claim Pass | [drm3.network/claim](https://drm3.network/claim) |
 | Live Demo | [pistachio.drm3.network](https://pistachio.drm3.network) |
 | Explorer | [cashew.drm3.network](https://cashew.drm3.network) |
+| DNS Scanner | [connor.dns.drm3.network](https://connor.dns.drm3.network) |
+| DNS Intel | [allen.dns.drm3.network](https://allen.dns.drm3.network) |
 
 ---
 
