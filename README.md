@@ -6,7 +6,7 @@ Official binaries, installers, and Homebrew formulae for the DRM3 ecosystem.
 
 | Package | Status | What |
 |---------|--------|------|
-| **[Pistachio](#pistachio)** | **v0.3.4** | DRM3's Morpheus-compatible P2P inference client |
+| **[Pistachio](#pistachio)** | **v0.3.5** | DRM3's Morpheus-compatible P2P inference client |
 | Venice Flux | roadmap | Venice AI SDK (chat, images, TTS, video) |
 | Inference Bus | roadmap | Multi-provider AI router |
 
