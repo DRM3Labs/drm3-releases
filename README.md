@@ -129,6 +129,22 @@ Service fingerprinting and technology stack analysis. Consumes Connor's signal d
 
 ---
 
+## Connor: DNS Signal Scanner
+
+Deep DNS reconnaissance platform. Scans 1,000+ domains, resolves all record types, generates cryptographic provenance receipts for every observation.
+
+**[connor.dns.drm3.network](https://connor.dns.drm3.network)**
+
+---
+
+## Allen: DNS Intelligence
+
+Service fingerprinting and technology stack analysis. Consumes Connor's signal data to identify 80+ providers across DNS, email, hosting, CDN, and security categories. Migration detection and change alerts.
+
+**[allen.dns.drm3.network](https://allen.dns.drm3.network)**
+
+---
+
 ## Links
 
 | | |

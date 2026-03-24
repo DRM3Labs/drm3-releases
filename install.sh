@@ -7,12 +7,12 @@
 set -e
 
 # Auto-detect latest version from GitHub, or override with PISTACHIO_VERSION env var
-if [ -n "${PISTACHIO_VERSION:-$MOR_VERSION}" ]; then
-  VERSION="${PISTACHIO_VERSION:-$MOR_VERSION}"
+if [ -n "${PISTACHIO_VERSION:-}" ]; then
+  VERSION="$PISTACHIO_VERSION"
 else
-  VERSION=$(curl -sI https://github.com/drm3labs/drm3-releases/releases/latest 2>/dev/null | grep -i '^location:' | grep -oE '[^/]+$' | tr -d '\r' | sed 's/^pistachio-v//; s/^mor-v//')
+  VERSION=$(curl -sI https://github.com/drm3labs/drm3-releases/releases/latest 2>/dev/null | grep -i '^location:' | grep -oE '[^/]+$' | tr -d '\r' | sed 's/^pistachio-v//')
   if [ -z "$VERSION" ]; then
-    echo "Could not detect latest version. Set MOR_VERSION manually."
+    echo "Could not detect latest version. Set PISTACHIO_VERSION manually."
     exit 1
   fi
 fi
