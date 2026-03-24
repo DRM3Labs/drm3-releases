@@ -6,9 +6,9 @@ Official binaries, installers, and Homebrew formulae for the DRM3 ecosystem.
 
 | Package | Status | What |
 |---------|--------|------|
-| **[Pistachio](#pistachio)** | **v0.3.8** | DRM3's Morpheus-compatible P2P inference client |
-| **[Connor](#connor-dns-signal-scanner)** | **v0.3.8** | DNS signal scanner with provenance |
-| **[Allen](#allen-dns-intelligence)** | **v0.3.8** | DNS intelligence and service fingerprinting |
+| **[Pistachio](#pistachio)** | **v0.3.8** | DRM3's P2P inference client — every session attested on-chain |
+| **[Connor](#connor-dns-signal-scanner)** | **v0.3.8** | DNS signal scanner with attested provenance |
+| **[Allen](#allen-dns-intelligence)** | **v0.3.8** | DNS intelligence with attested provenance chain |
 | Venice Flux | roadmap | Venice AI SDK (chat, images, TTS, video) |
 | Inference Bus | roadmap | Multi-provider AI router |
 
@@ -16,7 +16,7 @@ Official binaries, installers, and Homebrew formulae for the DRM3 ecosystem.
 
 ## Pistachio
 
-Rust-native P2P inference client. Connects your wallet to decentralized AI providers on the Morpheus network. One binary, all platforms. No middleman.
+Rust-native P2P inference client. Connects your wallet to decentralized AI providers on the Morpheus network. Every session attested on-chain. One binary, all platforms. No middleman.
 
 ### Install (macOS — recommended)
 
@@ -110,22 +110,6 @@ Contract: [`0x052852CeE02511af995F4f24Ed9DA44d6b8b7De0`](https://basescan.org/ad
 Live blockchain explorer for the Morpheus AI network. Providers, sessions, analytics, MOR price.
 
 **[cashew.explorer.drm3.network](https://cashew.explorer.drm3.network)**
-
----
-
-## Connor: DNS Signal Scanner
-
-Deep DNS reconnaissance platform. Scans 1,000+ domains, resolves all record types, generates cryptographic provenance receipts for every observation.
-
-**[connor.dns.drm3.network](https://connor.dns.drm3.network)**
-
----
-
-## Allen: DNS Intelligence
-
-Service fingerprinting and technology stack analysis. Consumes Connor's signal data to identify 80+ providers across DNS, email, hosting, CDN, and security categories. Migration detection and change alerts.
-
-**[allen.dns.drm3.network](https://allen.dns.drm3.network)**
 
 ---
 
