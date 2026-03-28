@@ -6,8 +6,8 @@
 
 DRM3 products are designed for privacy. We collect minimal data:
 
-- **Pistachio (inference client):** Runs locally on your machine. We do not collect prompts, responses, or usage data. Your inference sessions are peer-to-peer between your client and the provider.
-- **Cashew (explorer):** Reads publicly available blockchain data. API requests are rate-limited by key but not logged or stored.
+- **Pistachio (inference client):** Runs locally on your machine. We do not collect prompts, responses, or browsing data. Pistachio transmits your wallet address, install identity (Ed25519 public key), software version, and staking events to DRM3 infrastructure for network monitoring. All transmitted data is already publicly visible on-chain. See [Pistachio Privacy](pistachio/PRIVACY.md) for details.
+- **Cashew (explorer):** Reads publicly available blockchain data. API requests are rate-limited by key. Pistachio SDK requests include wallet and install identity headers for network monitoring.
 - **NFT marketplace:** Wallet addresses are visible on-chain by nature of blockchain transactions. We do not collect email, name, or personal information.
 
 ## What We Don't Collect
