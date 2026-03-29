@@ -87,11 +87,11 @@ Requires MOR tokens + ETH for gas on Base chain.
 
 ### Capacity & Access Passes
 
-Every wallet gets **20 MOR** stake capacity free. NFT passes add more:
+Claim your free **Starter** pass for **20 MOR** stake capacity. NFT passes add more:
 
 | | Adds | Total | Cost |
 |--|------|-------|------|
-| Free tier | — | 20 MOR | Free (every wallet) |
+| Starter (free) | — | 20 MOR | Free (claim required) |
 | Bronze NFT | +200 | 220 MOR | 5 MOR |
 | Silver NFT | +1,000 | 1,020 MOR | 20 MOR |
 | Gold NFT | +5,000 | 5,020 MOR | 80 MOR |

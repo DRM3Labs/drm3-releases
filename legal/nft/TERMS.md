@@ -8,7 +8,7 @@ These terms supplement the [general DRM3 Terms of Use](../TERMS.md).
 
 ## Capacity Tiers
 
-Every wallet receives a baseline of 20 MOR inference capacity at no cost. Paid passes increase capacity beyond the baseline.
+Claiming the free Starter pass grants a baseline of 20 MOR inference capacity. Paid passes increase capacity beyond the baseline.
 
 | Tier | Capacity | Price | Supply |
 |------|----------|-------|--------|
