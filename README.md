@@ -6,9 +6,9 @@ Official binaries, installers, and Homebrew formulae for the DRM3 ecosystem.
 
 | Product | Version | What | Live |
 |---------|---------|------|------|
-| **[Pistachio](#pistachio)** | **v0.5.2** | P2P inference client — wallet + NFT identity, on-chain attestation | [pistachio.inference.drm3.network](https://pistachio.inference.drm3.network) |
+| **[Pistachio](#pistachio)** | **v0.5.4** | P2P inference client — wallet + NFT identity, on-chain attestation | [pistachio.inference.drm3.network](https://pistachio.inference.drm3.network) |
 | **[Cashew](#cashew-network-explorer)** | **v1.3.1** | Morpheus blockchain explorer — staking, sessions, analytics | [cashew.explorer.drm3.network](https://cashew.explorer.drm3.network) |
-| **[Connor](#connor-internet-telemetry)** | **v0.9.6** | Internet telemetry index — 10,000+ domains, provenance-signed | [connor.dns.drm3.network](https://connor.dns.drm3.network) |
+| **[Connor](#connor-internet-telemetry)** | **v0.9.8** | Internet telemetry index — 10,000+ domains, provenance-signed | [connor.dns.drm3.network](https://connor.dns.drm3.network) |
 | **[Allen](#allen-infrastructure-fingerprinting)** | **v0.4.0** | Infrastructure fingerprinting — 80+ provider categories | [allen.dns.drm3.network](https://allen.dns.drm3.network) |
 | **[3P Signals](#3p-signals)** | **v0.2.0** | Third-party data aggregator — 23 sources, provenance-signed | [signals.data.drm3.network](https://signals.data.drm3.network) |
 | **[Global Monitor](#global-monitor)** | live | Real-time product health dashboard | [status.drm3.network](https://status.drm3.network) |
