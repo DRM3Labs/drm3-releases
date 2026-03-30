@@ -100,7 +100,7 @@ Claim your free **Starter** pass for **20 MOR** stake capacity. NFT passes add m
 
 Bigger stake = longer sessions = less ETH gas. NFTs save money.
 
-Contract: [`0x052852CeE02511af995F4f24Ed9DA44d6b8b7De0`](https://basescan.org/address/0x052852CeE02511af995F4f24Ed9DA44d6b8b7De0) on Base mainnet.
+Contract: [`0xDba7705f4F5aA8250576EA9082de12840F730284`](https://basescan.org/address/0xDba7705f4F5aA8250576EA9082de12840F730284) on Base mainnet.
 
 3% royalty on all transfers. Passes are splittable and mergeable.
 
