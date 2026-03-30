@@ -2,15 +2,16 @@
 
 Official binaries, installers, and Homebrew formulae for the DRM3 ecosystem.
 
-## Packages
+## Products
 
-| Package | Status | What |
-|---------|--------|------|
-| **[Pistachio](#pistachio)** | **v0.3.8** | DRM3's P2P inference client — every session attested on-chain |
-| **[Connor](#connor-dns-signal-scanner)** | **v0.3.8** | DNS signal scanner with attested provenance |
-| **[Allen](#allen-dns-intelligence)** | **v0.3.8** | DNS intelligence with attested provenance chain |
-| Venice Flux | roadmap | Venice AI SDK (chat, images, TTS, video) |
-| Inference Bus | roadmap | Multi-provider AI router |
+| Product | Version | What | Live |
+|---------|---------|------|------|
+| **[Pistachio](#pistachio)** | **v0.5.2** | P2P inference client — wallet + NFT identity, on-chain attestation | [pistachio.inference.drm3.network](https://pistachio.inference.drm3.network) |
+| **[Cashew](#cashew-network-explorer)** | **v1.3.1** | Morpheus blockchain explorer — staking, sessions, analytics | [cashew.explorer.drm3.network](https://cashew.explorer.drm3.network) |
+| **[Connor](#connor-internet-telemetry)** | **v0.9.6** | Internet telemetry index — 10,000+ domains, provenance-signed | [connor.dns.drm3.network](https://connor.dns.drm3.network) |
+| **[Allen](#allen-infrastructure-fingerprinting)** | **v0.4.0** | Infrastructure fingerprinting — 80+ provider categories | [allen.dns.drm3.network](https://allen.dns.drm3.network) |
+| **[3P Signals](#3p-signals)** | **v0.2.0** | Third-party data aggregator — 23 sources, provenance-signed | [signals.data.drm3.network](https://signals.data.drm3.network) |
+| **[Global Monitor](#global-monitor)** | live | Real-time product health dashboard | [status.drm3.network](https://status.drm3.network) |
 
 ---
 
@@ -107,21 +108,21 @@ Contract: [`0x052852CeE02511af995F4f24Ed9DA44d6b8b7De0`](https://basescan.org/ad
 
 ## Cashew: Network Explorer
 
-Live blockchain explorer for the Morpheus AI network. Providers, sessions, analytics, MOR price.
+Live blockchain explorer for the Morpheus AI network. MOR staking, provider sessions, compute marketplace, price analytics. DRM3 Auth (wallet-signed EIP-712).
 
-**[cashew.explorer.drm3.network](https://cashew.explorer.drm3.network)**
-
----
-
-## Connor: DNS Signal Scanner
-
-Deep DNS reconnaissance platform. Scans 1,000+ domains, resolves all record types, generates cryptographic provenance receipts for every observation.
-
-**[connor.dns.drm3.network](https://connor.dns.drm3.network)**
+**[cashew.explorer.drm3.network](https://cashew.explorer.drm3.network)** | [API docs](https://cashew.explorer.drm3.network/llms.txt)
 
 ---
 
-## Allen: DNS Intelligence
+## Connor: Internet Telemetry
+
+Continuous internet telemetry index. Scans 10,000+ domains across DNS, HTTPS, WHOIS, certificates, traceroute, DNSSEC. Every observation is provenance-signed with Ed25519. Multi-plane enrichment with per-plane receipts.
+
+**[connor.dns.drm3.network](https://connor.dns.drm3.network)** | [API docs](https://connor.dns.drm3.network/llms.txt)
+
+---
+
+## Allen: Infrastructure Fingerprinting
 
 Service fingerprinting and technology stack analysis. Consumes Connor's signal data to identify 80+ providers across DNS, email, hosting, CDN, and security categories. Migration detection and change alerts.
 
@@ -129,16 +130,44 @@ Service fingerprinting and technology stack analysis. Consumes Connor's signal d
 
 ---
 
+## 3P Signals
+
+Third-party data aggregator. 23 external data sources (financial, government, environmental, social, search). Every fetch is provenance-signed with Ed25519 per-source signers. 30-day hot storage with fetch history drill-down.
+
+**[signals.data.drm3.network](https://signals.data.drm3.network)** | [API docs](https://signals.data.drm3.network/llms.txt)
+
+---
+
+## Global Monitor
+
+Real-time product health dashboard. Tracks status of all DRM3 products via the DRM3 Health Protocol.
+
+**[status.drm3.network](https://status.drm3.network)** | [API docs](https://status.drm3.network/llms.txt)
+
+---
+
+## Provenance
+
+All DRM3 data products sign their outputs with Ed25519 provenance receipts. Every scan, fetch, and observation has a cryptographic proof of when it was collected, by which scanner, and what the content hash was. Receipts are chained for audit trail.
+
+Learn more: [drm3.network/llms.txt](https://drm3.network/llms.txt)
+
+---
+
 ## Links
 
 | | |
 |--|--|
+| Homepage | [drm3.network](https://drm3.network) |
 | Products | [drm3.network/products](https://drm3.network/products) |
+| NFT Passes | [drm3.xyz](https://drm3.xyz) |
 | Claim Pass | [drm3.network/claim](https://drm3.network/claim) |
-| Live Demo | [pistachio.inference.drm3.network](https://pistachio.inference.drm3.network) |
+| Status | [status.drm3.network](https://status.drm3.network) |
 | Explorer | [cashew.explorer.drm3.network](https://cashew.explorer.drm3.network) |
-| DNS Scanner | [connor.dns.drm3.network](https://connor.dns.drm3.network) |
-| DNS Intel | [allen.dns.drm3.network](https://allen.dns.drm3.network) |
+| Telemetry | [connor.dns.drm3.network](https://connor.dns.drm3.network) |
+| Fingerprinting | [allen.dns.drm3.network](https://allen.dns.drm3.network) |
+| Signals | [signals.data.drm3.network](https://signals.data.drm3.network) |
+| Live Demo | [pistachio.inference.drm3.network](https://pistachio.inference.drm3.network) |
 
 ---
 
