@@ -1,30 +1,59 @@
 # Privacy Policy — Connor
 
-**DRM3 Labs Corp. · Last updated: March 23, 2026**
+**DRM3 Labs Corp. · Last updated: March 30, 2026**
 
-Connor is a DNS reconnaissance and signal scanning platform operated by DRM3 Labs Corp.
+Connor is a DNS intelligence and internet telemetry platform operated by DRM3 Labs Corp.
 
 This policy supplements the [general DRM3 Privacy Policy](../PRIVACY.md).
 
-## Data Practices
+## Data We Collect About Domains
 
-Connor resolves publicly available DNS records via DNS-over-HTTPS (Cloudflare). All data Connor collects — DNS records, WHOIS responses, certificate transparency logs — is already public. Connor does not create new data about domain owners; it indexes what is already observable by anyone.
+All data Connor collects about domains is already publicly available via standard internet protocols. Connor does not create new data about domain owners — it indexes what is already observable by anyone.
 
-## API Access
+**Public protocol data collected:**
+- DNS records (A, AAAA, MX, NS, TXT, CNAME, SOA, CAA, SRV) via DNS-over-HTTPS
+- TLS certificate chains via port 443 TLS handshake
+- Certificate Transparency log entries via crt.sh
+- WHOIS/RDAP registration data via public WHOIS servers
+- HTTP status and headers via single HTTPS request (no content crawling)
+- robots.txt content (to report on AI crawler policies)
+- Traceroute hop data via ICMP
+- ASN/IP organization via public IP databases
+- DNSSEC validation status via DNS
 
-API access requires an API key for rate limiting and access control. We do not correlate API keys to personal identity. API request content is not logged or stored beyond operational metrics (request counts for rate limiting).
+Connor does **not** access private networks, authenticated services, password-protected pages, or non-public infrastructure.
+
+## Data We Collect About API Users
+
+API access requires an API key for rate limiting. We collect:
+- Request counts per key (for rate limiting)
+- No personal information tied to API keys
+- No browsing history, tracking, or analytics
+- No cookies for API access (UI sessions use HttpOnly JWT cookies)
 
 ## What We Don't Collect
 
-- No personal information
-- No tracking or analytics
-- No cookies
+- No personal information about domain owners
+- No web page content (Connor does not crawl or index pages)
 - No user accounts or profiles
-- No browsing history
+- No third-party tracking or analytics
+- No advertising data
 
-## Scanned Domains
+## robots.txt
 
-Connor maintains a catalog of domains it scans. Domain owners cannot opt out of public DNS resolution — DNS is a public protocol. If you believe Connor is displaying inaccurate information about your domain, contact us.
+Connor fetches robots.txt to **analyze and report** AI crawler blocking policies across the internet. This is metadata research — Connor does not crawl page content. DNS, WHOIS, TLS, and traceroute queries use separate protocols not governed by robots.txt. See our Terms of Use for full details.
+
+## Domain Owner Rights
+
+DNS, WHOIS, and TLS certificate data are public by protocol design. Domain owners cannot opt out of public DNS resolution.
+
+If you believe Connor is displaying inaccurate data about your domain, or if you have questions about our scanning practices, contact rob@drm3.io.
+
+## Data Retention
+
+- Recent observations: 30 days (Cloudflare D1)
+- Permanent archive: Indefinite (Google BigQuery)
+- All archived data includes cryptographic provenance receipts
 
 ---
 
