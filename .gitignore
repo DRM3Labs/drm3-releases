@@ -1,4 +1,7 @@
 CLAUDE.md
 
-# No sourcemaps - proprietary source
+# OS
+.DS_Store
+
+# No sourcemaps — proprietary source
 *.map
