@@ -11,7 +11,7 @@ Official binaries, installers, and Homebrew formulae for the DRM3 ecosystem.
 | **[Connor](#connor-internet-telemetry)** | **v0.9.8** | Internet telemetry index — 10,000+ domains, provenance-signed | [connor.dns.drm3.network](https://connor.dns.drm3.network) |
 | **[Allen](#allen-infrastructure-fingerprinting)** | **v0.4.0** | Infrastructure fingerprinting — 80+ provider categories | [allen.dns.drm3.network](https://allen.dns.drm3.network) |
 | **[3P Signals](#3p-signals)** | **v0.2.0** | Third-party data aggregator — 23 sources, provenance-signed | [signals.data.drm3.network](https://signals.data.drm3.network) |
-| **[DRM3 Office](#drm3-office)** | preview | AI-powered office suite with provenance-signed documents | Coming soon |
+| **DRM3 Office** | preview | AI-powered office suite with provenance-signed documents | Coming soon |
 | **[Global Monitor](#global-monitor)** | live | Real-time product health dashboard | [status.drm3.network](https://status.drm3.network) |
 
 ---
@@ -85,7 +85,7 @@ pistachio serve                    # Dashboard at localhost:19377
 
 That's it. Two commands. Your wallet is your identity, your NFT pass controls your stake capacity.
 
-Requires MOR tokens + ETH for gas on Base chain.
+Requires MOR tokens + ETH for gas on Base chain. **[Full setup guide →](https://drm3.network/docs/pistachio-guide)** (wallet, MOR, passes, troubleshooting).
 
 ### Capacity & Access Passes
 
@@ -141,7 +141,7 @@ Third-party data aggregator. 23 external data sources (financial, government, en
 
 ## DRM3 Office
 
-AI-powered office suite with provenance-signed documents. Product details in [`products/drm3-office/`](products/drm3-office/).
+AI-powered office suite with provenance-signed documents. Coming soon.
 
 ---
 
