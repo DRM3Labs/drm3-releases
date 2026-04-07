@@ -32,7 +32,7 @@ We do not sell, share, or transmit user data to third parties.
 - [Cashew Privacy](cashew/PRIVACY.md)
 - [NFT Pass Privacy](nft/PRIVACY.md)
 - [Connor Privacy](connor/PRIVACY.md)
-- [Allen Privacy](allen/PRIVACY.md)
+- [RunsOn Privacy](allen/PRIVACY.md)
 
 ## Contact
 

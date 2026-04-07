@@ -36,7 +36,7 @@ We reserve the right to modify these terms at any time. Continued use after modi
 - [Cashew Terms](cashew/TERMS.md) — blockchain explorer
 - [NFT Pass Terms](nft/TERMS.md) — Pistachio Pass NFTs
 - [Connor Terms](connor/TERMS.md) — DNS signal scanner
-- [Allen Terms](allen/TERMS.md) — DNS intelligence platform
+- [RunsOn Terms](allen/TERMS.md) — DNS intelligence platform
 
 ## Contact
 
