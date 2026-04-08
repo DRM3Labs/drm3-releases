@@ -9,7 +9,7 @@ Official binaries, installers, and Homebrew formulae for the DRM3 ecosystem.
 | **[Pistachio](#pistachio)** | **v0.7.1** | P2P inference client — wallet + NFT identity, on-chain attestation | [pistachio.inference.drm3.network](https://pistachio.inference.drm3.network) |
 | **[Cashew](#cashew-network-explorer)** | **v1.3.1** | Morpheus blockchain explorer — staking, sessions, analytics | [cashew.explorer.drm3.network](https://cashew.explorer.drm3.network) |
 | **[Connor](#connor-internet-telemetry)** | **v0.9.8** | Internet telemetry index — 10,000+ domains, provenance-signed | [connor.dns.drm3.network](https://connor.dns.drm3.network) |
-| **[Allen](#allen-infrastructure-fingerprinting)** | **v0.4.0** | Infrastructure fingerprinting — 80+ provider categories | [allen.dns.drm3.network](https://allen.dns.drm3.network) |
+| **[RunsWith](#runswith-infrastructure-fingerprinting)** | **v0.4.0** | Infrastructure fingerprinting — 80+ provider categories | [runswith.dns.drm3.network](https://runswith.dns.drm3.network) |
 | **[Open-Signals](#open-signals)** | **v0.2.0** | Open data aggregator — 23 sources, provenance-signed | [signals.data.drm3.network](https://signals.data.drm3.network) |
 | **DRM3 Office** | preview | AI-powered office suite with provenance-signed documents | Coming soon |
 | **[Global Monitor](#global-monitor)** | live | Real-time product health dashboard | [status.drm3.network](https://status.drm3.network) |
@@ -154,11 +154,11 @@ Continuous internet telemetry index. Scans 10,000+ domains across DNS, HTTPS, WH
 
 ---
 
-## Allen: Infrastructure Fingerprinting
+## RunsWith: Infrastructure Fingerprinting
 
 Service fingerprinting and technology stack analysis. Consumes Connor's signal data to identify 80+ providers across DNS, email, hosting, CDN, and security categories. Migration detection and change alerts.
 
-**[allen.dns.drm3.network](https://allen.dns.drm3.network)**
+**[runswith.dns.drm3.network](https://runswith.dns.drm3.network)**
 
 ---
 
@@ -203,7 +203,7 @@ Learn more: [drm3.network/llms.txt](https://drm3.network/llms.txt)
 | Status | [status.drm3.network](https://status.drm3.network) |
 | Explorer | [cashew.explorer.drm3.network](https://cashew.explorer.drm3.network) |
 | Telemetry | [connor.dns.drm3.network](https://connor.dns.drm3.network) |
-| Fingerprinting | [allen.dns.drm3.network](https://allen.dns.drm3.network) |
+| Fingerprinting | [runswith.dns.drm3.network](https://runswith.dns.drm3.network) |
 | Signals | [signals.data.drm3.network](https://signals.data.drm3.network) |
 | Live Demo | [pistachio.inference.drm3.network](https://pistachio.inference.drm3.network) |
 
