@@ -6,11 +6,11 @@ Official binaries, installers, and Homebrew formulae for the DRM3 ecosystem.
 
 | Product | Version | What | Live |
 |---------|---------|------|------|
-| **[Pistachio](#pistachio)** | **v0.5.4** | P2P inference client — wallet + NFT identity, on-chain attestation | [pistachio.inference.drm3.network](https://pistachio.inference.drm3.network) |
+| **[Pistachio](#pistachio)** | **v0.7.1** | P2P inference client — wallet + NFT identity, on-chain attestation | [pistachio.inference.drm3.network](https://pistachio.inference.drm3.network) |
 | **[Cashew](#cashew-network-explorer)** | **v1.3.1** | Morpheus blockchain explorer — staking, sessions, analytics | [cashew.explorer.drm3.network](https://cashew.explorer.drm3.network) |
 | **[Connor](#connor-internet-telemetry)** | **v0.9.8** | Internet telemetry index — 10,000+ domains, provenance-signed | [connor.dns.drm3.network](https://connor.dns.drm3.network) |
 | **[Allen](#allen-infrastructure-fingerprinting)** | **v0.4.0** | Infrastructure fingerprinting — 80+ provider categories | [allen.dns.drm3.network](https://allen.dns.drm3.network) |
-| **[3P Signals](#3p-signals)** | **v0.2.0** | Third-party data aggregator — 23 sources, provenance-signed | [signals.data.drm3.network](https://signals.data.drm3.network) |
+| **[Open-Signals](#open-signals)** | **v0.2.0** | Open data aggregator — 23 sources, provenance-signed | [signals.data.drm3.network](https://signals.data.drm3.network) |
 | **DRM3 Office** | preview | AI-powered office suite with provenance-signed documents | Coming soon |
 | **[Global Monitor](#global-monitor)** | live | Real-time product health dashboard | [status.drm3.network](https://status.drm3.network) |
 
@@ -68,6 +68,37 @@ pistachio serve
 ```
 
 Open `http://localhost:19377` in your Windows browser — WSL2 forwards ports automatically.
+
+### Update
+
+```bash
+# Homebrew (CLI)
+brew upgrade drm3labs/drm3/pistachio
+
+# Homebrew (desktop app)
+brew upgrade --cask drm3labs/drm3/pistachio
+
+# Linux / WSL2 (re-run install script — always gets latest)
+curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/products/pistachio/install.sh | sh
+```
+
+### Reinstall (same version)
+
+```bash
+brew reinstall drm3labs/drm3/pistachio
+```
+
+### Uninstall
+
+```bash
+# Homebrew
+brew uninstall pistachio
+
+# Linux (manual install)
+sudo rm /usr/local/bin/pistachio
+```
+
+Your wallet config at `~/.mor/config.toml` is preserved on uninstall.
 
 ### macOS Note
 
