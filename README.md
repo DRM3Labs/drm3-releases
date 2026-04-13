@@ -134,7 +134,7 @@ Bigger stake = longer sessions = less ETH gas. NFTs save money.
 
 Contract: [`0xDba7705f4F5aA8250576EA9082de12840F730284`](https://basescan.org/address/0xDba7705f4F5aA8250576EA9082de12840F730284) on Base mainnet.
 
-3% royalty on all transfers. Passes are splittable and mergeable.
+3% royalty on all transfers.
 
 ---
 
