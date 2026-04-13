@@ -10,7 +10,10 @@ set -e
 if [ -n "${PISTACHIO_VERSION:-}" ]; then
   VERSION="$PISTACHIO_VERSION"
 else
-  VERSION=$(curl -sI https://github.com/drm3labs/drm3-releases/releases/latest 2>/dev/null | grep -i '^location:' | grep -oE '[^/]+$' | tr -d '\r' | sed 's/^pistachio-v//')
+  # Find latest pistachio-v* release (not provenance or other products)
+  VERSION=$(curl -s https://api.github.com/repos/drm3labs/drm3-releases/releases 2>/dev/null \
+    | grep '"tag_name"' | grep 'pistachio-v' | head -1 \
+    | sed 's/.*"pistachio-v\([^"]*\)".*/\1/')
   if [ -z "$VERSION" ]; then
     echo "Could not detect latest version. Set PISTACHIO_VERSION manually."
     exit 1
