@@ -40,4 +40,4 @@ We reserve the right to modify these terms at any time. Continued use after modi
 
 ## Contact
 
-DRM3 Labs Corp. — rob@drm3.io
+DRM3 Labs Corp. — support@drm3.io

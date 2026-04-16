@@ -67,4 +67,4 @@ Connor is provided "as is" without warranty of any kind. Scan data reflects what
 
 ---
 
-[General Terms](../TERMS.md) · [Privacy Policy](PRIVACY.md) · rob@drm3.io
+[General Terms](../TERMS.md) · [Privacy Policy](PRIVACY.md) · support@drm3.io

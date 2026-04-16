@@ -28,4 +28,4 @@ RunsWith is provided "as is" without warranty of any kind. Service detections, p
 
 ---
 
-[General Terms](../TERMS.md) · [Privacy Policy](PRIVACY.md) · rob@drm3.io
+[General Terms](../TERMS.md) · [Privacy Policy](PRIVACY.md) · support@drm3.io

@@ -18,4 +18,4 @@ NFTs are non-refundable once minted. A 3% royalty (ERC-2981) applies to all seco
 
 ---
 
-[General Privacy Policy](../PRIVACY.md) · [Terms of Use](TERMS.md) · rob@drm3.io
+[General Privacy Policy](../PRIVACY.md) · [Terms of Use](TERMS.md) · support@drm3.io

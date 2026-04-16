@@ -36,4 +36,4 @@ We do not sell, share, or transmit user data to third parties.
 
 ## Contact
 
-DRM3 Labs Corp. — rob@drm3.io
+DRM3 Labs Corp. — support@drm3.io

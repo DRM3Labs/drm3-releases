@@ -31,4 +31,4 @@ This data is used for network monitoring, product improvement, and usage analyti
 
 ---
 
-[General Privacy Policy](../PRIVACY.md) · [Terms of Use](TERMS.md) · rob@drm3.io
+[General Privacy Policy](../PRIVACY.md) · [Terms of Use](TERMS.md) · support@drm3.io

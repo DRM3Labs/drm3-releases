@@ -28,4 +28,4 @@ RunsWith generates service detection reports and technology stack analyses. Thes
 
 ---
 
-[General Privacy Policy](../PRIVACY.md) · [Terms of Use](TERMS.md) · rob@drm3.io
+[General Privacy Policy](../PRIVACY.md) · [Terms of Use](TERMS.md) · support@drm3.io

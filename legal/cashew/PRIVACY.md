@@ -18,4 +18,4 @@ Cashew reads publicly available blockchain data and serves it via API. API acces
 
 ---
 
-[General Privacy Policy](../PRIVACY.md) · [Terms of Use](TERMS.md) · rob@drm3.io
+[General Privacy Policy](../PRIVACY.md) · [Terms of Use](TERMS.md) · support@drm3.io

@@ -47,7 +47,7 @@ Connor fetches robots.txt to **analyze and report** AI crawler blocking policies
 
 DNS, WHOIS, and TLS certificate data are public by protocol design. Domain owners cannot opt out of public DNS resolution.
 
-If you believe Connor is displaying inaccurate data about your domain, or if you have questions about our scanning practices, contact rob@drm3.io.
+If you believe Connor is displaying inaccurate data about your domain, or if you have questions about our scanning practices, contact support@drm3.io.
 
 ## Data Retention
 
@@ -57,4 +57,4 @@ If you believe Connor is displaying inaccurate data about your domain, or if you
 
 ---
 
-[General Privacy Policy](../PRIVACY.md) · [Terms of Use](TERMS.md) · rob@drm3.io
+[General Privacy Policy](../PRIVACY.md) · [Terms of Use](TERMS.md) · support@drm3.io
