@@ -1,15 +1,15 @@
 {
-  "version": "0.9.46",
-  "notes": "Pistachio Desktop v0.9.46",
-  "pub_date": "2026-04-17T19:58:26Z",
+  "version": "0.9.47",
+  "notes": "Pistachio Desktop v0.9.47",
+  "pub_date": "2026-04-17T21:11:43Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/DRM3Labs/drm3-releases/releases/download/pistachio-desktop-v0.9.46/Pistachio_0.9.46_aarch64.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTR3dlaUo0dElBRnlac2ZLc0ZhejJtM01VRndCekF0bE1veDkvQW4zdHdyQ2xuNUp6OFlZMGVWZXQzbGRkYUxHYlhERGt5ZHlmMzhlWEw4ZFNOaU1WNUY3R01jM2RMcnd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2NDU1NjI3CWZpbGU6UGlzdGFjaGlvLmFwcC50YXIuZ3oKQVdpN3liZm1ZNW1veVRwY3JkY3I2UUd6SENtOUU5cUxwZDUxVXpCWm1FaHh2Qm9LRlBkcG9aN0NNY3hrQnlySkFuak8zeUNBZXFzRGcrUnNVMWM1Qnc9PQo="
+      "url": "https://github.com/DRM3Labs/drm3-releases/releases/download/pistachio-desktop-v0.9.47/Pistachio_0.9.47_aarch64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTR3dlaUo0dElBRjhTVUI2MzQ1ZFB5Rk5CV20xeFhTSU9vK0tEcWV0OUI3dzBrUFFrNUZWbkFLeng5OXN5TlhkYzFyZFdiUEFyalpIUm9OL1kwWFhxYUtJK0QxU2VIMndBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2NDYwMjQ1CWZpbGU6UGlzdGFjaGlvLmFwcC50YXIuZ3oKM3RzaXVSOXhsYWxwZTlGcVJTeG4ySFJzd25hbFNoQ08wWTVENlpRdmNVQTkvTDh4YklXRnhEWnpKSFpDTVlpeHNwQjlqR0UxckN3Lzg3ZHpNRXlQQ2c9PQo="
     },
     "darwin-x86_64": {
-      "url": "https://github.com/DRM3Labs/drm3-releases/releases/download/pistachio-desktop-v0.9.46/Pistachio_0.9.46_x64.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTR3dlaUo0dElBRnd6KzB0VGVkT0R2Z3ZkNnNJVVRqYXJnbkJKajgrdHR3WjhKRzc4Q1A4dmZ4QjNsT1dMSGlrSmlvRkZVRkdSRmd2MlQ2WFI5VmVaVTRNR0xEdGp4REEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2NDU1NTU0CWZpbGU6UGlzdGFjaGlvLmFwcC50YXIuZ3oKSkVFeW1LUldhRVIrZ2Y3S3pYdEFCbWVXb1d1Y1RXVnFiQVRZVFRSNExqWTIvYW05UkpmcGhGd0FMbStrYStSb00yR0ZPN2IybmZMKy96Z2xiT1NUQmc9PQo="
+      "url": "https://github.com/DRM3Labs/drm3-releases/releases/download/pistachio-desktop-v0.9.47/Pistachio_0.9.47_x64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTR3dlaUo0dElBRnhibTJVTFFOYnBjTG9CUWpGRm1UVHE3aFYyQnU1Z0VVa3hvUk5oTmhpOVZQaE9pMUtmSFc3M2hPQ3VvN3J2YU4wQUJxYloyUVdmdTJua2tDTzN1L0FRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2NDYwMzAzCWZpbGU6UGlzdGFjaGlvLmFwcC50YXIuZ3oKVUg2aVRlbWJvaW9iYkQ3OCtjcktRcFR5TzVmUVpUT21OWkh2bEVFVkZ3VHQyUksrRHl5UlBLMHZjQTlQZzdrL2FyYlBGLzFReVc4bUdReFY3RTBMQ3c9PQo="
     }
   }
 }
