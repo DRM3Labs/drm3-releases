@@ -1,6 +1,8 @@
-# drm3-provenance
+# DRM3 Provenance
 
-Cryptographic proof of work for the AI age. Ed25519 attestation receipts, Merkle rollups, and trust aggregation.
+`drm3-provenance` — cryptographic proof of work for the AI age. Ed25519 attestation receipts, Merkle rollups, and trust aggregation.
+
+**Latest:** `provenance-v0.2.0`
 
 Every data operation produces a signed receipt. The receipt travels with the data. Anyone downstream can verify it without trusting anyone in the chain.
 

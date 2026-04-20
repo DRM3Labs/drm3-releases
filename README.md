@@ -1,194 +1,42 @@
 # DRM3 Releases
 
-Official binaries, installers, and Homebrew formulae for the DRM3 ecosystem.
+Official release distribution for DRM3 products — signed binaries, installers, desktop auto-update manifests, and Homebrew formulae.
 
-## Products
-
-| Product | Version | What | Live |
-|---------|---------|------|------|
-| **[Pistachio](#pistachio)** | **v0.7.1** | P2P inference client — wallet + NFT identity, on-chain attestation | [pistachio.inference.drm3.network](https://pistachio.inference.drm3.network) |
-| **[Cashew](#cashew-network-explorer)** | **v1.3.1** | Morpheus blockchain explorer — staking, sessions, analytics | [cashew.explorer.drm3.network](https://cashew.explorer.drm3.network) |
-| **[Connor](#connor-internet-telemetry)** | **v0.9.8** | Internet telemetry index — 10,000+ domains, provenance-signed | [connor.dns.drm3.network](https://connor.dns.drm3.network) |
-| **[RunsWith](#runswith-infrastructure-fingerprinting)** | **v0.4.0** | Infrastructure fingerprinting — 80+ provider categories | [runswith.dns.drm3.network](https://runswith.dns.drm3.network) |
-| **[Open-Signals](#open-signals)** | **v0.2.0** | Open data aggregator — 23 sources, provenance-signed | [signals.data.drm3.network](https://signals.data.drm3.network) |
-| **DRM3 Office** | preview | AI-powered office suite with provenance-signed documents | Coming soon |
-| **[Global Monitor](#global-monitor)** | live | Real-time product health dashboard | [status.drm3.network](https://status.drm3.network) |
+Platform home: **[drm3.network](https://drm3.network)** · Live status: **[status.drm3.network](https://status.drm3.network)**
 
 ---
 
-## Pistachio
+## Downloadable products
 
-Rust-native P2P inference client. Connects your wallet to decentralized AI providers on the Morpheus network. Every session attested on-chain. One binary, all platforms. No middleman.
+Ship as signed binaries or WASM packages. Install locally.
 
-### Install (macOS — recommended)
+| Product | Latest | Kind | Install | Docs |
+|---------|--------|------|---------|------|
+| [Pistachio CLI](products/pistachio/README.md) | `pistachio-v0.11.10` | Rust binary (macOS, Linux, WSL2) | `brew install pistachio` | [guide](products/pistachio/GUIDE.md) |
+| [Pistachio Desktop](products/pistachio-desktop/README.md) | `pistachio-desktop-v0.11.9` | Tauri app (macOS) | `brew install --cask pistachio` | [guide](products/pistachio-desktop/README.md) |
+| [DRM3 Provenance](products/provenance/README.md) | `provenance-v0.2.0` | WASM + Rust crate | Download tarball | [guide](products/provenance/GUIDE.md) |
+| [AI Text Analyzer](products/ai-text-analyzer/README.md) | `ai-text-analyzer-v1.1.0` | npm package | `npm install @drm3/ai-text-analyzer` | [readme](products/ai-text-analyzer/README.md) |
 
-```bash
-brew tap drm3labs/drm3 && brew install --cask pistachio
-```
+## Hosted services
 
-One command. Installs the desktop app + `pistachio` CLI. No Gatekeeper warnings.
+Web products. Nothing to install.
 
-### CLI Only (all platforms)
-
-```bash
-brew tap drm3labs/drm3 && brew install pistachio
-```
-
-or
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/products/pistachio/install.sh | sh
-```
-
-### Platforms
-
-| Platform | Command |
-|----------|---------|
-| Mac (Desktop + CLI) | `brew tap drm3labs/drm3 && brew install --cask pistachio` |
-| Mac (CLI only) | `brew tap drm3labs/drm3 && brew install pistachio` |
-| Linux x86_64 | `brew install pistachio` or curl command above |
-| Linux ARM64 | Same curl command (auto-detects architecture) |
-| Windows | Install WSL2 first (see below), then curl command above |
-| Chromebook | Enable Linux → open Terminal → curl command above |
-
-### Windows Install (via WSL2)
-
-Pistachio runs on Windows through WSL2 (Windows Subsystem for Linux). WSL2 runs a real Linux kernel — same binary, full performance.
-
-```powershell
-# Step 1: Install WSL2 (one time, from PowerShell as admin)
-wsl --install
-
-# Step 2: Restart your computer, open Ubuntu from Start menu
-
-# Step 3: Install Pistachio (inside Ubuntu terminal)
-curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/products/pistachio/install.sh | sh
-pistachio config set private-key
-pistachio serve
-```
-
-Open `http://localhost:19377` in your Windows browser — WSL2 forwards ports automatically.
-
-### Update
-
-```bash
-# Homebrew (CLI)
-brew upgrade drm3labs/drm3/pistachio
-
-# Homebrew (desktop app)
-brew upgrade --cask drm3labs/drm3/pistachio
-
-# Linux / WSL2 (re-run install script — always gets latest)
-curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/products/pistachio/install.sh | sh
-```
-
-### Reinstall (same version)
-
-```bash
-brew reinstall drm3labs/drm3/pistachio
-```
-
-### Uninstall
-
-```bash
-# Homebrew
-brew uninstall pistachio
-
-# Linux (manual install)
-sudo rm /usr/local/bin/pistachio
-```
-
-Your wallet config at `~/.mor/config.toml` is preserved on uninstall.
-
-### macOS Note
-
-> **Install via Homebrew to avoid Gatekeeper warnings.** Homebrew automatically removes macOS quarantine. For direct binary downloads, run:
-> ```bash
-> xattr -d com.apple.quarantine /usr/local/bin/pistachio
-> ```
-
-### Get Started
-
-```bash
-pistachio config set private-key   # Enter your wallet private key
-pistachio serve                    # Dashboard at localhost:19377
-```
-
-That's it. Two commands. Your wallet is your identity, your NFT pass controls your stake capacity.
-
-Requires MOR tokens + ETH for gas on Base chain. **[Full setup guide →](https://drm3.network/docs/pistachio-guide)** (wallet, MOR, passes, troubleshooting).
-
-### Capacity & Access Passes
-
-Claim your free **Starter** pass for **20 MOR** stake capacity. NFT passes add more:
-
-| | Adds | Total | Cost |
-|--|------|-------|------|
-| Starter (free) | — | 20 MOR | Free (claim required) |
-| Bronze NFT | +200 | 220 MOR | 5 MOR |
-| Silver NFT | +1,000 | 1,020 MOR | 20 MOR |
-| Gold NFT | +5,000 | 5,020 MOR | 80 MOR |
-| Diamond NFT | +20,000 | 20,020 MOR | 250 MOR |
-
-Bigger stake = longer sessions = less ETH gas. NFTs save money.
-
-Contract: [`0xDba7705f4F5aA8250576EA9082de12840F730284`](https://basescan.org/address/0xDba7705f4F5aA8250576EA9082de12840F730284) on Base mainnet.
-
-3% royalty on all transfers.
+| Service | URL |
+|---------|-----|
+| Pistachio Demo | [pistachio.inference.drm3.network](https://pistachio.inference.drm3.network) |
+| Cashew Explorer | [cashew.explorer.drm3.network](https://cashew.explorer.drm3.network) |
+| Connor Telemetry | [connor.dns.drm3.network](https://connor.dns.drm3.network) |
+| RunsWith Fingerprinting | [runswith.dns.drm3.network](https://runswith.dns.drm3.network) |
+| Open Signals | [signals.data.drm3.network](https://signals.data.drm3.network) |
+| Global Monitor | [status.drm3.network](https://status.drm3.network) |
 
 ---
 
-## Cashew: Network Explorer
+## Verification
 
-Live blockchain explorer for the Morpheus AI network. MOR staking, provider sessions, compute marketplace, price analytics. DRM3 Auth (wallet-signed EIP-712).
+Every release artifact is signed with Ed25519 by the DRM3 release signer (`drm3/releases/signer`). Public keys are published at [status.drm3.network/.well-known/drm3-keys.json](https://status.drm3.network/.well-known/drm3-keys.json).
 
-**[cashew.explorer.drm3.network](https://cashew.explorer.drm3.network)** | [API docs](https://cashew.explorer.drm3.network/llms.txt)
-
----
-
-## Connor: Internet Telemetry
-
-Continuous internet telemetry index. Scans 10,000+ domains across DNS, HTTPS, WHOIS, certificates, traceroute, DNSSEC. Every observation is provenance-signed with Ed25519. Multi-plane enrichment with per-plane receipts.
-
-**[connor.dns.drm3.network](https://connor.dns.drm3.network)** | [API docs](https://connor.dns.drm3.network/llms.txt)
-
----
-
-## RunsWith: Infrastructure Fingerprinting
-
-Service fingerprinting and technology stack analysis. Consumes Connor's signal data to identify 80+ providers across DNS, email, hosting, CDN, and security categories. Migration detection and change alerts.
-
-**[runswith.dns.drm3.network](https://runswith.dns.drm3.network)**
-
----
-
-## 3P Signals
-
-Third-party data aggregator. 23 external data sources (financial, government, environmental, social, search). Every fetch is provenance-signed with Ed25519 per-source signers. 30-day hot storage with fetch history drill-down.
-
-**[signals.data.drm3.network](https://signals.data.drm3.network)** | [API docs](https://signals.data.drm3.network/llms.txt)
-
----
-
-## DRM3 Office
-
-AI-powered office suite with provenance-signed documents. Coming soon.
-
----
-
-## Global Monitor
-
-Real-time product health dashboard. Tracks status of all DRM3 products via the DRM3 Health Protocol.
-
-**[status.drm3.network](https://status.drm3.network)** | [API docs](https://status.drm3.network/llms.txt)
-
----
-
-## Provenance
-
-All DRM3 data products sign their outputs with Ed25519 provenance receipts. Every scan, fetch, and observation has a cryptographic proof of when it was collected, by which scanner, and what the content hash was. Receipts are chained for audit trail.
-
-Learn more: [drm3.network/llms.txt](https://drm3.network/llms.txt)
+See [SIGNING.md](SIGNING.md) for the verification protocol.
 
 ---
 
@@ -201,11 +49,6 @@ Learn more: [drm3.network/llms.txt](https://drm3.network/llms.txt)
 | NFT Passes | [drm3.xyz](https://drm3.xyz) |
 | Claim Pass | [drm3.network/claim](https://drm3.network/claim) |
 | Status | [status.drm3.network](https://status.drm3.network) |
-| Explorer | [cashew.explorer.drm3.network](https://cashew.explorer.drm3.network) |
-| Telemetry | [connor.dns.drm3.network](https://connor.dns.drm3.network) |
-| Fingerprinting | [runswith.dns.drm3.network](https://runswith.dns.drm3.network) |
-| Signals | [signals.data.drm3.network](https://signals.data.drm3.network) |
-| Live Demo | [pistachio.inference.drm3.network](https://pistachio.inference.drm3.network) |
 
 ---
 

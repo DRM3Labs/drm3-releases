@@ -125,9 +125,9 @@ Every transaction on Base requires a small amount of ETH for gas fees. You'll ne
 
 ---
 
-## 5. Claim Your DRM3Pass
+## 5. Claim Your Pistachio Pass
 
-DRM3Pass is a free NFT that gives you 20 MOR of staking capacity. You must claim it before you can open inference sessions.
+The Pistachio Pass is a free NFT that gives you 20 MOR of staking capacity. You must claim it before you can open inference sessions.
 
 ### Claim via web
 
@@ -256,7 +256,7 @@ Run any command with `--help` for full details.
 
 Run `pistachio config set private-key` and enter your wallet key. Or set `PISTACHIO_PRIVATE_KEY=0x...` in your environment.
 
-### "No DRM3Pass found"
+### "No Pistachio Pass found"
 
 You need to claim your free pass first. Go to [drm3.network/claim](https://drm3.network/claim) or run `pistachio claim-pass`.
 
