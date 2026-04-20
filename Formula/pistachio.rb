@@ -4,28 +4,28 @@
 class Pistachio < Formula
   desc "Pistachio — DRM3's Morpheus-compatible P2P inference client"
   homepage "https://drm3.network"
-  version "0.11.5"
+  version "0.11.6"
   license "LicenseRef-Proprietary"
 
   on_macos do
     on_arm do
       url "https://github.com/drm3labs/drm3-releases/releases/download/pistachio-v#{version}/pistachio-darwin-arm64"
-      sha256 "422f99c9a48a78bfad9302c3752329195f4745a26da47d004c7123bd05b04a05"
+      sha256 "261c46d3609f8cf94cffe20d4bf5739179d4acdd257c81431cf73e63e52a460d"
     end
     on_intel do
       url "https://github.com/drm3labs/drm3-releases/releases/download/pistachio-v#{version}/pistachio-darwin-amd64"
-      sha256 "d90dc2399337694f6739eb0f1ede04852a9dca2e2260c50242895dbc3efef86a"
+      sha256 "2ad532c1c0e097e111fa69c50a4fc604a5beb2e9329b0efc4370a8ff30bc200b"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/drm3labs/drm3-releases/releases/download/pistachio-v#{version}/pistachio-linux-arm64"
-      sha256 "999ae830e08b515494083a6ff8685ba4925deba28453517b70642e491057e309"
+      sha256 "e97279d0948d0056b23d446ae3300c74eb734095261f1f5a65e122ab534ecf19"
     end
     on_intel do
       url "https://github.com/drm3labs/drm3-releases/releases/download/pistachio-v#{version}/pistachio-linux-amd64"
-      sha256 "c88db545fb6ed24112da1949e4a79dbfb0fecbe1912ffb1df1d390e11eb24681"
+      sha256 "f0a341911363c22071f502f2b51a5e9978ad03cb97e08363e15ed2c3708547c6"
     end
   end
 
