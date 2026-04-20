@@ -1,6 +1,6 @@
 # AI Text Analyzer
 
-`@drm3/ai-text-analyzer` — heuristic AI-generated-text detector. Zero LLM cost, deterministic scoring, designed to run inside other DRM3 data products (notably Open Signals feed ingestion).
+`@drm3/ai-text-analyzer` — heuristic AI-generated-text detector. Zero LLM cost, deterministic scoring. Used inside the World News RAG ingestion pipeline to score article authenticity before signing.
 
 **Latest:** `ai-text-analyzer-v1.1.0`
 
