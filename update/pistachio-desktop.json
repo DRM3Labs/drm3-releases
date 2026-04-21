@@ -1,15 +1,11 @@
 {
-  "version": "0.11.12",
-  "notes": "Pistachio Desktop v0.11.12",
-  "pub_date": "2026-04-21T01:28:02Z",
+  "version": "0.11.14",
+  "notes": "Pistachio Desktop v0.11.14",
+  "pub_date": "2026-04-21T07:15:00Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/DRM3Labs/drm3-releases/releases/download/pistachio-desktop-v0.11.12/Pistachio_0.11.12_aarch64.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTR3dlaUo0dElBRjNYbFEwb1hMVUZ5NjFCWkJkdnBzK3hyN3VWUFhpdmJQb2xpeFU3OU5jOHQxUmhVK0RNNXM1azZPL3NtY0NObGFVUWdGbDM2dXZpaXNnVTJVTVVRZXcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2NzM0ODA4CWZpbGU6UGlzdGFjaGlvLmFwcC50YXIuZ3oKcjMzc3dvaVFTY0NuMFl6VnBKL0w3V1M2ZHBLK0J1bzljbHBsb0lPOUZmRE84NjdIRjlyd2VzLysxeHdJcHJRV0NaT3piQVg0K2o5bE9MWmNQK2Q0RHc9PQo="
-    },
-    "darwin-x86_64": {
-      "url": "https://github.com/DRM3Labs/drm3-releases/releases/download/pistachio-desktop-v0.11.12/Pistachio_0.11.12_x64.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTR3dlaUo0dElBRjFGRG9lZlJiTnRYUld3WVZQK1B4a0V0MnlTR2ZRRldWTDRvR3N1a3hSRUt2NlBCRlFtYm5pQWVnWkRwejdrUE1SZHR2d1cwcVByT25DTzQwSXFIdkE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2NzM0ODgyCWZpbGU6UGlzdGFjaGlvLmFwcC50YXIuZ3oKNnp5cXoyUm40UDJHajk1dGpSbjF5MTlFbGpiQmNIWHArVnNhdWpScDFyVDZyVnNUWWUxdUU1VFBCZjdvSHBnem1ZaTViRTdTV2E4eHBoNnpZTW4yQXc9PQo="
+      "url": "https://github.com/DRM3Labs/drm3-releases/releases/download/pistachio-desktop-v0.11.14/Pistachio.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTR3dlaUo0dElBRjBMdi9sODZLdi9IL3J2RTRMcHZXSnBwYXkxYlFlSWZLRHN1K1BlNHdCaGprWEhZV1dFYmFYNkFjNGY2L0g1YmFYYWVPZy90WlRWcFdZNDN0S2ZLeHdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2NzU1NTI0CWZpbGU6UGlzdGFjaGlvLmFwcC50YXIuZ3oKVDUzZlNtTFg4dlhCNFUvZ1ZPSUtmNGdRUW1YVmZySzR6MEw2cjFJV1h2R1E3cW96ZkU1d2w3dlFnR1JxdDVXOFJJTHVSSVBRZ0JEZXlaTklBZTFMRFE9PQo="
     }
   }
 }
