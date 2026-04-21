@@ -10,22 +10,22 @@ class Pistachio < Formula
   on_macos do
     on_arm do
       url "https://github.com/drm3labs/drm3-releases/releases/download/pistachio-v#{version}/pistachio-darwin-arm64"
-      sha256 "a6d59dfe23485724a8b0c390dd748ec7ca0c69ae462c0711608151f8b36d2caa"
+      sha256 "062af902ab2f67abac3577d310e66224edcba566aa56c11653bd547cd9f36514"
     end
     on_intel do
       url "https://github.com/drm3labs/drm3-releases/releases/download/pistachio-v#{version}/pistachio-darwin-amd64"
-      sha256 "f625bdcdded8283e6faf9a1dee7cffee30ea9d366826713d41be7217ddcbe461"
+      sha256 "4a8f2825a9f89dc7bed9061972665b4bb4ebbd8d3af788bdc87e2399bcd3ed83"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/drm3labs/drm3-releases/releases/download/pistachio-v#{version}/pistachio-linux-arm64"
-      sha256 "e1e691b109edcf9061367590d437d2a83714fb245c6f520ab20086e1629049e1"
+      sha256 "06515bdc2c39c052c3a0eaf5bcf8f47a8f818ca480f5b894f00152df2189f6b2"
     end
     on_intel do
       url "https://github.com/drm3labs/drm3-releases/releases/download/pistachio-v#{version}/pistachio-linux-amd64"
-      sha256 "8aa1200de2587d83bfb225d1499eb00997bf7cc441db3a133c22924c5e5babf7"
+      sha256 "4551e7f6406c9ee7f919be0c7ed1c48ff3a0a53155bb0d57e36c7db58b850c99"
     end
   end
 
