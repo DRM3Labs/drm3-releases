@@ -1,11 +1,15 @@
 {
-  "version": "0.11.16",
-  "notes": "Pistachio Desktop v0.11.16 — wallet cold-boot fix, legacy RPC env vars dropped, Settings polish.",
-  "pub_date": "2026-04-21T20:32:00Z",
+  "version": "0.18.0",
+  "notes": "Pistachio Desktop v0.18.0",
+  "pub_date": "2026-05-11T23:37:41Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/DRM3Labs/drm3-releases/releases/download/pistachio-desktop-v0.11.16/Pistachio.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTR3dlaUo0dElBRjgxOU1lNTY3OU9ObitUMzU3UU12bkZHQkJoNDUvNnlDbjlUUW9VWVlZaW8zWDlORHc4NUZEU0FZYjNJNkd4UmxCYXJUZkZMd0l2UkRiVzZIYi9rNEFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2ODAxOTMxCWZpbGU6UGlzdGFjaGlvLmFwcC50YXIuZ3oKNE9VR1YreFlOd21XN0syN0h1cFFrT2lHditqVGZUd0E0bEVIbXZ2TFlYWjVGdHFsOW5RcHJsWml0c3RjUHJlUkhNUVpueXNISmcrWTJ1RXhNZitGQmc9PQo="
+      "url": "https://github.com/DRM3Labs/drm3-releases/releases/download/pistachio-desktop-v0.18.0/Pistachio_0.18.0_aarch64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTR3dlaUo0dElBRjhPQUZZMWpZeUlOUU8yR0p4RXdSRHN0TlJlbC9EcmQ4em1FcWZhN1NWRUpKR29qdkI5MmxTbkFXWFBTd0EyUUNaYnJUUFNFYjczSmdVQjB6Tm9JUmdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NTQyNTgyCWZpbGU6UGlzdGFjaGlvLmFwcC50YXIuZ3oKWk9wMzVacGU5NFQvMlZYOHZGVnJFK0JmcDZ5MzdiYjVtTGpKanVmNnFaUU1PWDdUS3hUMkRLQ1B1SDhPeklkblV5Q1ZaOFpMaUV3QnZzTk5xNFcrQlE9PQo="
+    },
+    "darwin-x86_64": {
+      "url": "https://github.com/DRM3Labs/drm3-releases/releases/download/pistachio-desktop-v0.18.0/Pistachio_0.18.0_x64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTR3dlaUo0dElBRit2VnpIYVB1M3ZmSGhYUGVMak91KzZqQ3hxRlR3Y3hqWjlmcC8rK25zRjh1WG5PeHd4LzlyV054M3dWTkwybDh2ZGJrY0ZsTENBQTdSTTUvckxTandjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NTQyNjYxCWZpbGU6UGlzdGFjaGlvLmFwcC50YXIuZ3oKcVdyY0NGNklxK2l1MmI3ZC9hMjJTRU1udGhjVVhkek5sTG9nM2F1TDVOcE5KTVV3UkFOSHYxcFZRNTdtYk1Ub0xnWEpBL04rV1pUN3dPUzE1MXNtQ2c9PQo="
     }
   }
 }
