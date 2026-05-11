@@ -2,7 +2,7 @@
 
 Rust-native P2P inference client for the Morpheus network. Wallet-as-identity, NFT-gated stake capacity, on-chain session attestation. One binary, all platforms.
 
-**Latest:** `pistachio-v0.11.12`
+**Latest:** `pistachio-v0.17.0`
 
 ## Install
 
