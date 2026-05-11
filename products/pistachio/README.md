@@ -46,7 +46,7 @@ Every release artifact ships with a SHA256 checksum and (when enabled) an Ed2551
 
 Claim your free **Starter** pass for 20 MOR stake capacity. NFT passes add more — see [drm3.xyz](https://drm3.xyz).
 
-Contract: [`0x258FE6e8d0237cCc7101452e6E6992F9536A12EA`](https://basescan.org/address/0x258FE6e8d0237cCc7101452e6E6992F9536A12EA) on Base.
+Contract: [`0x3a29929e97DF8a2EB515e6a35da5f019c91ECA43`](https://basescan.org/address/0x3a29929e97DF8a2EB515e6a35da5f019c91ECA43) on Base.
 
 ## License
 
