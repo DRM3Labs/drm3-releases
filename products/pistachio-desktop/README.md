@@ -2,7 +2,7 @@
 
 The Pistachio P2P inference client, packaged as a native macOS app (Tauri + Rust). Same engine as the CLI, wrapped in a desktop UI with system-tray controls and auto-update.
 
-**Latest:** `pistachio-desktop-v0.18.7`
+**Latest:** `pistachio-desktop-v0.18.8`
 
 ## Install (macOS)
 
