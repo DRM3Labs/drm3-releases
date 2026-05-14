@@ -92,19 +92,13 @@ Pistachio reads session and staking data from the Base blockchain. A dedicated R
 
 1. Go to [alchemy.com](https://www.alchemy.com/) and create a free account
 2. Create an app, select **Base Mainnet**
-3. Copy your API key and add to `~/.pistachio/config.toml`:
-
-```toml
-rpc_url = "https://base-mainnet.g.alchemy.com/v2/YOUR_KEY"
-```
-
-Or set the environment variable:
+3. Copy your API key and run:
 
 ```bash
-export BASE_RPC_URLS=https://base-mainnet.g.alchemy.com/v2/YOUR_KEY
+pistachio config set rpc-url https://base-mainnet.g.alchemy.com/v2/YOUR_KEY
 ```
 
-The free Alchemy tier gives you 300 million compute units per month. More than enough for personal use.
+Verify with `pistachio info`. The free Alchemy tier gives you 300 million compute units per month. More than enough for personal use.
 
 ---
 
