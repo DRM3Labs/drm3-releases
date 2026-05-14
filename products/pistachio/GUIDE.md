@@ -6,7 +6,7 @@ Everything you need to go from install to your first AI inference on the Morpheu
 
 ## 1. Install
 
-### macOS (recommended)
+### macOS
 
 ```bash
 brew tap drm3labs/drm3 && brew install --cask pistachio
@@ -14,11 +14,7 @@ brew tap drm3labs/drm3 && brew install --cask pistachio
 
 Installs the desktop app + `pistachio` CLI. No Gatekeeper warnings.
 
-**CLI only:**
-
-```bash
-brew tap drm3labs/drm3 && brew install pistachio
-```
+> **Do not install both the cask and the formula.** They both provide the `pistachio` binary and will conflict. If you previously ran `brew install pistachio` (without `--cask`), uninstall it first: `brew uninstall pistachio`
 
 ### Linux
 
@@ -90,7 +86,29 @@ cast wallet new
 
 ---
 
-## 3. Get MOR Tokens
+## 3. Set Up a Base RPC Key (Required)
+
+Pistachio reads session and staking data from the Base blockchain. A dedicated RPC endpoint is required. Free public RPCs rate-limit too aggressively and will cause startup failures.
+
+1. Go to [alchemy.com](https://www.alchemy.com/) and create a free account
+2. Create an app, select **Base Mainnet**
+3. Copy your API key and add to `~/.pistachio/config.toml`:
+
+```toml
+rpc_url = "https://base-mainnet.g.alchemy.com/v2/YOUR_KEY"
+```
+
+Or set the environment variable:
+
+```bash
+export BASE_RPC_URLS=https://base-mainnet.g.alchemy.com/v2/YOUR_KEY
+```
+
+The free Alchemy tier gives you 300 million compute units per month. More than enough for personal use.
+
+---
+
+## 4. Get MOR Tokens
 
 MOR is the native token of the Morpheus network. You need MOR to stake for inference sessions.
 
@@ -111,7 +129,7 @@ Also available via MetaMask Swaps or Coinbase DEX (both on Base).
 
 ---
 
-## 4. Get ETH on Base (for gas)
+## 5. Get ETH on Base (for gas)
 
 Every transaction on Base requires a small amount of ETH for gas fees. You'll need ETH for staking, opening sessions, and claiming your NFT pass.
 
@@ -125,7 +143,7 @@ Every transaction on Base requires a small amount of ETH for gas fees. You'll ne
 
 ---
 
-## 5. Claim Your Pistachio Pass
+## 6. Claim Your Pistachio Pass
 
 The Pistachio Pass is a free NFT that gives you 20 MOR of staking capacity. You must claim it before you can open inference sessions.
 
@@ -159,7 +177,7 @@ Bigger stake = longer sessions = less ETH gas over time.
 
 ---
 
-## 6. Start Pistachio
+## 7. Start Pistachio
 
 ```bash
 pistachio serve
@@ -171,7 +189,7 @@ The dashboard shows your wallet balance, available models, active sessions, and 
 
 ---
 
-## 7. Your First Inference
+## 8. Your First Inference
 
 ### From the CLI
 
@@ -267,6 +285,15 @@ You need MOR tokens on the **Base** network. If you have MOR on Ethereum mainnet
 ### "Insufficient ETH for gas"
 
 You need a small amount of ETH on Base for transaction fees. $5 is plenty.
+
+### Wrong version after `brew upgrade`
+
+If `pistachio --version` shows an old version after upgrading, you may have both the formula and cask installed. They conflict. Fix:
+
+```bash
+brew uninstall pistachio
+brew install --cask pistachio
+```
 
 ### Port already in use
 
