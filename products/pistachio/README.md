@@ -9,10 +9,10 @@ Rust-native P2P inference client for the Morpheus network. Wallet-as-identity, N
 ### macOS
 
 ```bash
-brew tap drm3labs/drm3 && brew install --cask pistachio
+brew tap drm3labs/drm3 && brew install --cask pistachio-desktop
 ```
 
-Installs the desktop app + CLI. For the headless CLI only (no desktop app), use `brew install pistachio` instead, but do not install both.
+Installs the desktop app + CLI. For the headless CLI only (no desktop app): `brew install drm3labs/drm3/pistachio`. The cask and formula can coexist.
 
 ### Linux / WSL2
 
@@ -36,8 +36,8 @@ Open `http://localhost:19377`. Full walkthrough: [GUIDE.md](./GUIDE.md).
 ## Update / uninstall
 
 ```bash
-brew upgrade --cask pistachio  # update
-brew uninstall --cask pistachio  # remove (wallet config preserved)
+brew upgrade --cask pistachio-desktop  # update
+brew uninstall --cask pistachio-desktop  # remove (wallet config preserved)
 ```
 
 ## Verification

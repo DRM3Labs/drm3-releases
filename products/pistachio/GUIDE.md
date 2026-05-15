@@ -9,12 +9,14 @@ Everything you need to go from install to your first AI inference on the Morpheu
 ### macOS
 
 ```bash
-brew tap drm3labs/drm3 && brew install --cask pistachio
+brew tap drm3labs/drm3 && brew install --cask pistachio-desktop
 ```
 
 Installs the desktop app + `pistachio` CLI. No Gatekeeper warnings.
 
-> **Do not install both the cask and the formula.** They both provide the `pistachio` binary and will conflict. If you previously ran `brew install pistachio` (without `--cask`), uninstall it first: `brew uninstall pistachio`
+For the CLI only (no desktop app): `brew install drm3labs/drm3/pistachio`
+
+> **The cask and formula can coexist.** The cask (`pistachio-desktop`) installs the desktop app, and the formula (`pistachio`) installs the CLI only. They no longer conflict.
 
 ### Linux
 
@@ -286,7 +288,7 @@ If `pistachio --version` shows an old version after upgrading, you may have both
 
 ```bash
 brew uninstall pistachio
-brew install --cask pistachio
+brew install --cask pistachio-desktop
 ```
 
 ### Port already in use

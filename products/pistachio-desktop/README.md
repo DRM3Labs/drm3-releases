@@ -7,7 +7,7 @@ The Pistachio P2P inference client, packaged as a native macOS app (Tauri + Rust
 ## Install (macOS)
 
 ```bash
-brew tap drm3labs/drm3 && brew install --cask pistachio
+brew tap drm3labs/drm3 && brew install --cask pistachio-desktop
 ```
 
 Installs the desktop app + bundled `pistachio` CLI. Homebrew removes the macOS quarantine attribute automatically, so no Gatekeeper warnings.

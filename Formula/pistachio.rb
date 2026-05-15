@@ -41,7 +41,7 @@ class Pistachio < Formula
   def post_install
     if OS.mac?
       opoo "On macOS, the desktop app is recommended instead:"
-      ohai "  brew uninstall pistachio && brew install --cask pistachio"
+      ohai "  brew uninstall pistachio && brew install --cask pistachio-desktop"
       ohai ""
     end
     ohai "Pistachio installed! Get started:"

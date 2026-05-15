@@ -49,7 +49,7 @@ main() {
   if [ "$OS" = "darwin" ]; then
     echo ""
     echo "Tip: On macOS, Homebrew is the recommended install method:"
-    echo "  brew tap drm3labs/drm3 && brew install --cask pistachio"
+    echo "  brew tap drm3labs/drm3 && brew install --cask pistachio-desktop"
     echo ""
     echo "Continuing with direct binary install..."
     echo ""
