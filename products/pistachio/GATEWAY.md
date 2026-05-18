@@ -1,35 +1,39 @@
 # Deploy Your Own Pistachio Gateway
 
-Host a Pistachio inference gateway on Fly.io (or any platform). One binary, one wallet, one command.
+Host a Pistachio inference gateway using the official Docker image. Deploy on Fly.io, Google Cloud, AWS, DigitalOcean, Railway, or any platform that runs containers.
 
 ## What You Get
 
 A hosted AI inference gateway connected to the Morpheus decentralized network. Your users authenticate with API keys. You control the wallet, the staking, and the capacity.
 
+## Monthly Cost
+
+| Service | What | Cost |
+|---------|------|------|
+| Fly.io (or similar) | 1 shared CPU, 1GB RAM | ~$5-7/mo |
+| Alchemy RPC | Free tier (300M compute units) | $0 |
+| Base gas | Session open/close txs | ~$0.30/mo |
+| DRM3 Pass | Free tier (one per wallet) | $0 |
+| **Total** | | **~$5-8/mo** |
+
 ## Prerequisites
 
-- [Fly.io](https://fly.io) account (free tier works)
-- An Ethereum wallet with MOR tokens on Base
-- ETH on Base for gas (~$0.01 per session open/close)
+- Docker image: `drm3/pistachio:latest`
+- An Ethereum wallet private key (Base network)
+- ETH on Base for gas (~$0.01 per session)
+- Free [Alchemy](https://alchemy.com) account for Base RPC
 
-## Quick Start
+## Deploy on Fly.io
 
-### 1. Install Pistachio
-
-```bash
-brew tap drm3labs/drm3
-brew install pistachio
-```
-
-Or download from [GitHub Releases](https://github.com/drm3labs/drm3-releases/releases).
-
-### 2. Create a Fly App
+### 1. Create a Fly App
 
 ```bash
 fly apps create my-pistachio
 ```
 
-### 3. Create `fly.toml`
+### 2. Download `fly.toml`
+
+Grab the template from the [releases repo](https://github.com/drm3labs/drm3-releases/blob/main/products/pistachio/fly.example.toml), or create one:
 
 ```toml
 app = 'my-pistachio'
@@ -85,7 +89,34 @@ fly secrets set BASE_RPC_URLS=https://base-mainnet.g.alchemy.com/v2/YOUR_KEY --a
 ### 5. Deploy
 
 ```bash
-fly deploy
+fly deploy --image drm3/pistachio:latest
+```
+
+No source code needed. The Docker image contains everything.
+
+## Deploy on Other Platforms
+
+The same Docker image works anywhere:
+
+```bash
+# Docker (any host)
+docker run -p 19377:19377 \
+  -e GATEWAY_MODE=true \
+  -e GATEWAY_REQUIRE_AUTH=true \
+  -e PISTACHIO_PRIVATE_KEY=0x... \
+  -e GATEWAY_API_KEY=pst_... \
+  -e BASE_RPC_URLS=https://base-mainnet.g.alchemy.com/v2/YOUR_KEY \
+  drm3/pistachio:latest
+
+# Google Cloud Run
+gcloud run deploy pistachio \
+  --image drm3/pistachio:latest \
+  --port 19377 \
+  --set-env-vars "GATEWAY_MODE=true,GATEWAY_REQUIRE_AUTH=true"
+
+# Railway / Render / DigitalOcean App Platform
+# Paste the image URL: drm3/pistachio:latest
+# Set env vars in the dashboard
 ```
 
 ### 6. Claim a DRM3 Pass

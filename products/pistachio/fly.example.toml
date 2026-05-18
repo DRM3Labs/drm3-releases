@@ -1,0 +1,39 @@
+# Pistachio Gateway — Fly.io deployment template
+# Usage: fly deploy --config fly.example.toml --image drm3/pistachio:latest
+#
+# Before deploying, set your secrets:
+#   fly secrets set PISTACHIO_PRIVATE_KEY=0x... GATEWAY_API_KEY=pst_... BASE_RPC_URLS=https://...
+
+app = 'my-pistachio'          # Change to your app name
+primary_region = 'iad'         # Change to your preferred region
+
+[env]
+  GATEWAY_MODE = "true"
+  GATEWAY_REQUIRE_AUTH = "true"
+  GATEWAY_INSTANCE = "my-gateway"   # Shows in the UI banner
+
+[http_service]
+  internal_port = 19377
+  force_https = true
+  auto_stop_machines = 'off'
+  auto_start_machines = true
+  min_machines_running = 1
+  processes = ['app']
+
+[http_service.concurrency]
+  type = 'connections'
+  hard_limit = 100
+  soft_limit = 70
+
+[[http_service.checks]]
+  grace_period = "60s"
+  interval = "15s"
+  method = "GET"
+  timeout = "10s"
+  path = "/inference/health"
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
+  memory_mb = 1024
