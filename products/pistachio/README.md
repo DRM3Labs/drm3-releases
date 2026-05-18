@@ -2,7 +2,7 @@
 
 Rust-native P2P inference client for the Morpheus network. Wallet-as-identity, NFT-gated stake capacity, on-chain session attestation. One binary, all platforms.
 
-**Latest:** `pistachio-v0.18.8`
+**Latest:** `pistachio-v0.20.0`
 
 ## Install
 
@@ -32,6 +32,18 @@ pistachio serve
 ```
 
 Open `http://localhost:19377`. Full walkthrough: [GUIDE.md](./GUIDE.md).
+
+## Host a gateway
+
+Deploy Pistachio as a hosted inference gateway using Docker. No source code needed.
+
+```bash
+docker pull drm3/pistachio:latest
+```
+
+Deploy on Fly.io, Google Cloud Run, AWS, DigitalOcean, Railway — any platform that runs containers. ~$5-8/month.
+
+Full instructions: [GATEWAY.md](./GATEWAY.md) · Docker Hub: [drm3/pistachio](https://hub.docker.com/r/drm3/pistachio)
 
 ## Update / uninstall
 
