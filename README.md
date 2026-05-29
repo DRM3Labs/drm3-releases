@@ -12,8 +12,8 @@ Ship as signed binaries or WASM packages. Install locally.
 
 | Product | Latest | Kind | Install | Docs |
 |---------|--------|------|---------|------|
-| [Pistachio](products/pistachio/README.md) | `pistachio-v0.18.8` | Rust binary + Tauri desktop | `brew install --cask pistachio-desktop` | [guide](products/pistachio/GUIDE.md) |
-| [Pistachio CLI](products/pistachio/README.md) | `pistachio-v0.18.8` | CLI only (Linux, headless) | `brew install pistachio` | [guide](products/pistachio/GUIDE.md) |
+| [Pistachio](products/pistachio/README.md) | `pistachio-v0.23.13` | Rust binary + Tauri desktop | `brew install --cask pistachio-desktop` | [guide](products/pistachio/GUIDE.md) |
+| [Pistachio CLI](products/pistachio/README.md) | `pistachio-v0.23.13` | CLI only (Linux, headless) | `brew install pistachio` | [guide](products/pistachio/GUIDE.md) |
 | [DRM3 Provenance](products/provenance/README.md) | `provenance-v0.2.0` | WASM + Rust crate | Download tarball | [guide](products/provenance/GUIDE.md) |
 | [AI Text Analyzer](products/ai-text-analyzer/README.md) | `ai-text-analyzer-v1.1.0` | npm package | `npm install @drm3/ai-text-analyzer` | [readme](products/ai-text-analyzer/README.md) |
 
