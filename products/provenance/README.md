@@ -2,7 +2,7 @@
 
 `drm3-provenance` — cryptographic proof of work for the AI age. Ed25519 attestation receipts, Merkle rollups, and trust aggregation.
 
-**Latest:** `provenance-v0.2.0`
+**Latest:** `provenance-v0.4.1`
 
 Every data operation produces a signed receipt. The receipt travels with the data. Anyone downstream can verify it without trusting anyone in the chain.
 
@@ -15,7 +15,7 @@ Every data operation produces a signed receipt. The receipt travels with the dat
 Download the `pkg-web` tarball from the latest release:
 
 ```bash
-curl -fsSL https://github.com/drm3labs/drm3-releases/releases/download/provenance-v0.2.0/drm3-provenance-wasm-web-v0.2.0.tar.gz | tar xz
+curl -fsSL https://github.com/drm3labs/drm3-releases/releases/download/provenance-v0.4.1/drm3-provenance-wasm-web-v0.4.1.tar.gz | tar xz
 ```
 
 Copy `pkg-web/` contents into your worker's `src/wasm/` directory.
@@ -34,7 +34,7 @@ fallthrough = false
 Download the `pkg-node` tarball:
 
 ```bash
-curl -fsSL https://github.com/drm3labs/drm3-releases/releases/download/provenance-v0.2.0/drm3-provenance-wasm-node-v0.2.0.tar.gz | tar xz
+curl -fsSL https://github.com/drm3labs/drm3-releases/releases/download/provenance-v0.4.1/drm3-provenance-wasm-node-v0.4.1.tar.gz | tar xz
 ```
 
 ### Rust (crate)
