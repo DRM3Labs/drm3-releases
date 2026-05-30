@@ -10,17 +10,17 @@ DRM3 uses two independent signing schemes. They serve different purposes. Don't 
 |---|---|
 | Public key registry | https://status.drm3.network/.well-known/drm3-keys.json |
 | Algorithm | Ed25519 (raw, not via minisign wrapper) |
-| Signer tool | `drm3-pistachio-mor/src/bin/sign_release.rs` |
-| Verify tool (users) | `drm3-pistachio-mor/scripts/verify-release.sh` |
-| Private key | derived per-product from `PROVENANCE_SIGNING_MNEMONIC` (HKDF; path varies per SKU) |
-| Key location | Rob's shell env / 1Password — never in any repo |
+| Signer tool | internal release signing binary |
+| Verify tool (users) | `scripts/verify-release.sh` |
+| Private key | derived per-product from a signing secret (path varies per SKU) |
+| Key location | local developer machine / secure vault — never in any repo |
 
 **Active for:** Pistachio CLI binaries, Connor, Open-Signals, News-RAG, RunsWith.
 
 **Pistachio CLI flow, end-to-end:**
 
-1. `scripts/release.sh` (in `drm3-pistachio-mor`) builds the four binaries.
-2. If `PROVENANCE_SIGNING_MNEMONIC` is set, the script runs `sign-release`, producing `{binary}.receipt.json` next to each artifact.
+1. The release script builds the four platform binaries.
+2. If the signing secret is configured, the script produces `{binary}.receipt.json` next to each artifact.
 3. Receipt is uploaded as a release asset alongside the binary + `.sha256`.
 4. Users run `scripts/verify-release.sh /path/to/binary` — it downloads the receipt, looks up the signer's pubkey in the registry, verifies the signature.
 
@@ -46,18 +46,18 @@ A receipt looks like:
 
 | Aspect | Value |
 |---|---|
-| Public key | embedded in `drm3-pistachio-mor-desktop/src-tauri/tauri.conf.json` under `plugins.updater.pubkey` (base64 minisign format) |
+| Public key | embedded in the desktop app configuration under `plugins.updater.pubkey` (base64 minisign format) |
 | Manifest | `update/pistachio-desktop.json` in this repo |
 | Algorithm | Ed25519 via minisign wrapper |
-| Signer tool | `npm run tauri build` with `TAURI_SIGNING_PRIVATE_KEY` in env (produces `.app.tar.gz` + `.sig`) |
-| Private key | `~/.tauri/pistachio-desktop.key` on Rob's Mac |
-| Backup | should also live in 1Password |
+| Signer tool | Tauri build (produces `.app.tar.gz` + `.sig`) |
+| Private key | release signing key stored outside the repository |
+| Backup | secure vault |
 
 **Active for:** Pistachio Desktop (post-v0.9.45).
 
 **Pistachio Desktop release flow, end-to-end:**
 
-1. `scripts/release.sh` (in `drm3-pistachio-mor-desktop`) bumps versions, runs `npm run tauri build` (which signs), uploads the `.app.tar.gz` + `.sig` + `.dmg` to a `pistachio-desktop-v$VERSION` release on this repo.
+1. The release script bumps versions, builds and signs the desktop bundle, uploads the `.app.tar.gz` + `.sig` + `.dmg` to a `pistachio-desktop-v$VERSION` release on this repo.
 2. The same script rewrites `update/pistachio-desktop.json` with the new version, download URL, and the `.sig` file's contents.
 3. The desktop app polls the manifest URL on launch + on "Check for Updates". When `manifest.version > local_version`, it downloads the bundle, verifies the `.sig` against the embedded pubkey, installs, and relaunches.
 4. If verification fails, install is rejected — user stays on current version.
