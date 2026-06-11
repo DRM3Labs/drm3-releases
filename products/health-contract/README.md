@@ -2,12 +2,12 @@
 
 `@drm3/health-contract` — the single canonical, strongly-typed definition of every DRM3 product's `GET /health`. One Zod schema imported by both ends: `validateHealth()` (the status monitor — a wrong shape is a loud, field-named `degraded`, never a silent `undefined`→0) and `buildHealth()` (each product — throws if it would ship a drifted shape). Not a product — the health-reporting substrate.
 
-**Latest:** `health-contract-v0.1.0`
+**Latest:** `health-contract-v0.2.0`
 
 ## Install
 
 ```bash
-npm install https://github.com/DRM3Labs/drm3-releases/releases/download/health-contract-v0.1.0/drm3-health-contract-0.1.0.tgz
+npm install https://github.com/DRM3Labs/drm3-releases/releases/download/health-contract-v0.2.0/drm3-health-contract-0.2.0.tgz
 ```
 
 ## Use
