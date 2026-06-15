@@ -5,3 +5,8 @@ CLAUDE.md
 
 # No sourcemaps — proprietary source
 *.map
+
+# secrets — never commit
+.env
+.env.*
+!.env*.example
