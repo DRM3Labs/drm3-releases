@@ -1,5 +1,9 @@
 # Privacy Policy — Cashew
 
+> **SUPERSEDED.** Cashew was rebuilt and renamed **MorScan** (2026-07). This policy is kept for
+> the historical record only and no longer governs the live product. The current privacy policy is
+> at **https://morscan.io/privacy**.
+
 **DRM3 Labs Corp. · Last updated: March 22, 2026**
 
 Cashew is a blockchain explorer for the Morpheus network on Base mainnet.

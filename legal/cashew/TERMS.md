@@ -1,5 +1,9 @@
 # Terms of Use — Cashew
 
+> **SUPERSEDED.** Cashew was rebuilt and renamed **MorScan** (2026-07). These terms are kept for
+> the historical record only and no longer govern the live product. The current terms are at
+> **https://morscan.io/terms**.
+
 **DRM3 Labs Corp. · Last updated: March 22, 2026**
 
 Cashew is a blockchain explorer for the Morpheus network on Base mainnet.
