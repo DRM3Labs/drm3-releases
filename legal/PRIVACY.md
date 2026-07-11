@@ -18,7 +18,13 @@ DRM3 products are designed for privacy. We collect minimal data:
 - No private keys or wallet credentials
 - No browsing history or cookies
 - No analytics or tracking scripts on any DRM3 site
-- No IP address logging
+- No advertising or behavioral profiles
+
+## Network Security
+
+DRM3 services run behind Cloudflare. Your IP address is processed transiently at the edge for
+rate limiting, abuse prevention, and sanctions/geographic compliance. We do not use it to build a
+profile of you, sell it, or share it for advertising.
 
 ## Private Key Handling
 
@@ -39,7 +45,7 @@ We do not sell, share, or transmit user data to third parties for advertising, m
 ## Product-Specific Privacy
 
 - [Pistachio Privacy](pistachio/PRIVACY.md)
-- [Cashew Privacy](cashew/PRIVACY.md)
+- [MorScan Privacy](https://morscan.io/privacy) (formerly Cashew)
 - [NFT Pass Privacy](nft/PRIVACY.md)
 - [Connor Privacy](connor/PRIVACY.md)
 - [RunsWith Privacy](runswith/PRIVACY.md)

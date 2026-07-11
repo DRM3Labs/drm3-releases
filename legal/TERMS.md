@@ -96,7 +96,7 @@ If any provision of these terms is found unenforceable, the remaining provisions
 ## Product-Specific Terms
 
 - [Pistachio Terms](pistachio/TERMS.md) — inference client, CLI, desktop app
-- [Cashew Terms](cashew/TERMS.md) — blockchain explorer
+- [MorScan Terms](https://morscan.io/terms) — Morpheus blockchain explorer (formerly Cashew)
 - [NFT Pass Terms](nft/TERMS.md) — Pistachio Pass NFTs
 - [Connor Terms](connor/TERMS.md) — DNS signal scanner
 - [RunsWith Terms](runswith/TERMS.md) — DNS intelligence platform
