@@ -6,7 +6,7 @@ How to sign data with drm3-provenance. From single rows to Merkle-rolled batches
 
 ## What is attested provenance
 
-Every data operation in DRM3 produces an attestation: a cryptographically signed receipt that states what was done, what data went in, what came out, and when. The receipt is signed with Ed25519, chained to every receipt before and after it, and travels with the data. Any downstream party can verify the chain without trusting anyone in it.
+Every data operation in DRM3 produces an attestation: a cryptographically signed receipt that states what was done, what data went in, what came out, and when. The receipt is signed with Ed25519, chained to every receipt before and after it, and travels with the data. Any downstream party can confirm which key signed each link, and that no link has changed since it was written.
 
 ---
 
@@ -241,9 +241,9 @@ Every key is independently verifiable. The public keys are published at `https:/
 
 ---
 
-## Verify Without Trusting
+## Verify Any Receipt Yourself
 
-The point of attested provenance: anyone can verify without trusting the signer.
+The point of attested provenance: the signer is named on every receipt, permanently, and anyone can check that name and the unaltered payload for themselves.
 
 ```typescript
 // Download a receipt from any DRM3 API

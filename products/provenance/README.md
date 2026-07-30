@@ -4,7 +4,7 @@
 
 **Latest:** `provenance-v0.4.1`
 
-Every data operation produces a signed receipt. The receipt travels with the data. Anyone downstream can verify it without trusting anyone in the chain.
+Every data operation produces a signed receipt. The receipt travels with the data. Anyone downstream can confirm which key signed each step, and that nothing has been altered since it was signed.
 
 ---
 
