@@ -1,6 +1,6 @@
 # Privacy Policy — DRM3 Labs Corp.
 
-**Last updated: May 14, 2026**
+**Last updated: August 2, 2026**
 
 ## What We Collect
 
@@ -16,9 +16,8 @@ DRM3 products are designed for privacy. We collect minimal data:
 - No personal identification
 - No inference prompts or responses
 - No private keys or wallet credentials
-- No browsing history or cookies
-- No analytics or tracking scripts on any DRM3 site
 - No advertising or behavioral profiles
+- No analytics cookies unless you accept them. DRM3 sites load no analytics by default; optional, consent-gated Google Analytics runs only after you accept it in a site's cookie banner. The canonical description of what it collects, retention, and how to withdraw consent is the Analytics section of the hosted policy at https://drm3.io/privacy
 
 ## Network Security
 

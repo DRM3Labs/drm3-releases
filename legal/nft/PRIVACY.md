@@ -1,6 +1,6 @@
 # Privacy Policy — Pistachio Pass NFTs
 
-**DRM3 Labs Corp. · Last updated: March 22, 2026**
+**DRM3 Labs Corp. · Last updated: August 2, 2026**
 
 Pistachio Passes (PSTC) are ERC-721 NFTs on Base mainnet that control inference stake capacity.
 
@@ -13,8 +13,8 @@ NFTs are non-refundable once minted. A 3% royalty (ERC-2981) applies to all seco
 ## What We Don't Collect
 
 - No personal information
-- No tracking or analytics
-- No cookies
+- No advertising trackers
+- No analytics cookies unless you accept them: optional, consent-gated Google Analytics runs only after you accept it in the cookie banner. Details, retention, and withdrawal are in the Analytics section of https://drm3.io/privacy
 
 ---
 
