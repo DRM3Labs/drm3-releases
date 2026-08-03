@@ -28,16 +28,21 @@ Connor does **not** access private networks, authenticated services, password-pr
 API access requires an API key for rate limiting. We collect:
 - Request counts per key (for rate limiting)
 - No personal information tied to API keys
-- No browsing history, tracking, or analytics
-- No cookies for API access (UI sessions use HttpOnly JWT cookies)
+- No browsing history tied to API keys
+- No cookies for API access (UI sessions use HttpOnly JWT cookies; the website
+  sets analytics cookies only if you accept them in the cookie banner)
 
 ## What We Don't Collect
 
 - No personal information about domain owners
 - No web page content (Connor does not crawl or index pages)
-- No user accounts or profiles
-- No third-party tracking or analytics
-- No advertising data
+- No user accounts or profiles built from browsing
+- No advertising, no ad networks, and no advertising profiles
+- No analytics cookies unless you accept them. The website measures usage so we
+  can improve the experience and the product: optional Google Analytics runs
+  only after you accept it in the cookie banner, and you can change that choice
+  at any time from Cookie settings in the footer. We do not sell your data and
+  we do not share it with data brokers. Full detail: https://drm3.io/privacy
 
 ## robots.txt
 

@@ -17,8 +17,11 @@ API access requires an API key for rate limiting and access control. We do not c
 ## What We Don't Collect
 
 - No personal information
-- No tracking or analytics
-- No cookies
+- No advertising, ad networks, or advertising profiles
+- No analytics cookies unless you accept them. If a cookie banner appears, it is
+  optional usage measurement so we can improve the experience and the product;
+  decline and nothing loads. We do not sell your data or share it with data
+  brokers. Full detail: https://drm3.io/privacy
 - No user accounts or profiles
 - No browsing history
 

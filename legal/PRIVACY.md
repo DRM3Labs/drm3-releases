@@ -39,7 +39,13 @@ Pistachio connects to third-party RPC providers (e.g., Alchemy) configured by th
 
 ## Third-Party Data Sharing
 
-We do not sell, share, or transmit user data to third parties for advertising, marketing, or any commercial purpose.
+We do not sell user data, share it with data brokers, or transmit it to third parties for advertising or marketing.
+
+The one exception, and it is disclosed rather than hidden: if you accept analytics
+in a site's cookie banner, usage data is processed by Google Analytics on our
+behalf so we can understand how our products are used and improve them. That is
+its only purpose. It is not sold, not used for advertising, and not combined with
+advertising data. Decline, and nothing is sent. See https://drm3.io/privacy.
 
 ## Product-Specific Privacy
 

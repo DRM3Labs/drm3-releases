@@ -12,7 +12,7 @@ These terms supplement the [general DRM3 Terms of Use](../TERMS.md).
 
 ## Product-Specific Terms
 
-Cashew reads publicly available blockchain data and serves it via API. API access requires an API key for rate limiting. We do not log request content or correlate API keys to personal identity. The explorer UI uses no cookies or tracking scripts.
+Cashew reads publicly available blockchain data and serves it via API. API access requires an API key for rate limiting. We do not log request content or correlate API keys to personal identity. The explorer UI sets analytics cookies only if you accept them in a cookie banner; we use that to measure usage and improve the product, and we do not sell your data. See https://drm3.io/privacy.
 
 ## Alpha Software
 
