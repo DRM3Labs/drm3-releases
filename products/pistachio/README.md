@@ -54,7 +54,7 @@ brew uninstall --cask pistachio-desktop  # remove (wallet config preserved)
 
 ## Verification
 
-Every release artifact ships with a SHA256 checksum and (when enabled) an Ed25519 provenance receipt signed by `drm3/releases/signer`. Public keys: [status.drm3.network/.well-known/drm3-keys.json](https://status.drm3.network/.well-known/drm3-keys.json).
+Every release artifact ships with a SHA256 checksum and (when enabled) an Ed25519 provenance receipt signed by `drm3/releases/signer`. The install script and the Homebrew formula both check the binary against its published SHA256 before installing it, and stop on a missing or mismatched checksum. Public keys: [status.drm3.network/.well-known/drm3-keys.json](https://status.drm3.network/.well-known/drm3-keys.json).
 
 ## Capacity & passes
 

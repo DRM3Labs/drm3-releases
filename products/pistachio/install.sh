@@ -62,6 +62,38 @@ main() {
 
   echo "Downloading ${BINARY}..."
   curl -fsSL "${REPO}/${BINARY}" -o "${TMPDIR}/pistachio"
+
+  # Verify the binary against the SHA256 published beside it in the same
+  # release. Stop if the checksum is missing or does not match.
+  echo "Verifying checksum..."
+  if ! curl -fsSL "${REPO}/${BINARY}.sha256" -o "${TMPDIR}/pistachio.sha256"; then
+    echo "Could not download ${BINARY}.sha256. Install stopped."
+    exit 1
+  fi
+  EXPECTED=$(awk 'NR==1 {print tolower($1)}' "${TMPDIR}/pistachio.sha256")
+  case "$EXPECTED" in
+    *[!0-9a-f]*|"") EXPECTED="" ;;
+  esac
+  if [ "${#EXPECTED}" -ne 64 ]; then
+    echo "The published checksum for ${BINARY} is not a SHA256 value. Install stopped."
+    exit 1
+  fi
+  if command -v sha256sum >/dev/null 2>&1; then
+    ACTUAL=$(sha256sum "${TMPDIR}/pistachio" | awk '{print tolower($1)}')
+  elif command -v shasum >/dev/null 2>&1; then
+    ACTUAL=$(shasum -a 256 "${TMPDIR}/pistachio" | awk '{print tolower($1)}')
+  else
+    echo "No SHA256 tool found (sha256sum or shasum). Install stopped."
+    exit 1
+  fi
+  if [ "$ACTUAL" != "$EXPECTED" ]; then
+    echo "Checksum mismatch for ${BINARY}. Install stopped."
+    echo "  expected: ${EXPECTED}"
+    echo "  actual:   ${ACTUAL}"
+    exit 1
+  fi
+  echo "Checksum OK."
+
   chmod +x "${TMPDIR}/pistachio"
 
   # Install (may need sudo on Linux)

@@ -24,7 +24,7 @@ For the CLI only (no desktop app): `brew install drm3labs/drm3/pistachio`
 curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/products/pistachio/install.sh | sh
 ```
 
-Works on x86_64 and ARM64 (auto-detected).
+Works on x86_64 and ARM64 (auto-detected). The script checks the binary against the SHA256 published with the release and stops if the checksum is missing or does not match.
 
 ### Windows (via WSL2)
 
