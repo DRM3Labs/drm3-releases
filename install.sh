@@ -19,26 +19,33 @@ if [ -z "$PRODUCT" ]; then
   echo "Usage: curl -fsSL https://drm3.network/install.sh | sh -s <product>"
   echo ""
   echo "Available products:"
-  echo "  pistachio    — P2P inference client for Morpheus"
-  echo "  signalforge  — Content intelligence platform"
+  echo "  pistachio    - P2P inference client for Morpheus"
   echo ""
   echo "Or install directly:"
   echo "  curl -fsSL ${BASE}/pistachio/install.sh | sh"
-  echo "  curl -fsSL ${BASE}/signalforge/install.sh | sh"
   exit 1
 fi
 
+# Fetch the product installer to a file first so a failed download stops here
+# instead of piping an empty body into sh.
+run_installer() {
+  SCRIPT=$(mktemp)
+  trap 'rm -f "$SCRIPT"' EXIT
+  if ! curl -fsSL "${BASE}/$1/install.sh" -o "$SCRIPT" || [ ! -s "$SCRIPT" ]; then
+    echo "Could not download the $1 installer from ${BASE}/$1/install.sh. Install stopped."
+    exit 1
+  fi
+  sh "$SCRIPT"
+}
+
 case "$PRODUCT" in
   pistachio)
-    exec curl -fsSL "${BASE}/pistachio/install.sh" | sh
-    ;;
-  signalforge)
-    exec curl -fsSL "${BASE}/signalforge/install.sh" | sh
+    run_installer pistachio
     ;;
   *)
     echo "Unknown product: $PRODUCT"
     echo ""
-    echo "Available products: pistachio, signalforge"
+    echo "Available products: pistachio"
     echo ""
     echo "Usage: curl -fsSL https://drm3.network/install.sh | sh -s <product>"
     exit 1
