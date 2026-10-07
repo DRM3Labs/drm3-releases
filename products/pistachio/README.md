@@ -2,7 +2,7 @@
 
 Rust-native P2P inference client for the Morpheus network. Wallet-as-identity, NFT-gated stake capacity, on-chain session attestation. One binary, all platforms.
 
-**Latest:** `pistachio-v0.30.0`
+**Latest:** `pistachio-v0.32.0`
 
 ## Install
 
@@ -41,7 +41,7 @@ Deploy Pistachio as a hosted inference gateway using Docker. No source code need
 docker pull drm3/pistachio:latest
 ```
 
-Deploy on Fly.io, Google Cloud Run, AWS, DigitalOcean, Railway — any platform that runs containers. ~$5-8/month.
+Deploy on Fly.io, Google Cloud Run, AWS, DigitalOcean, Railway - any platform that runs containers. ~$5-8/month.
 
 Full instructions: [GATEWAY.md](./GATEWAY.md) · Docker Hub: [drm3/pistachio](https://hub.docker.com/r/drm3/pistachio)
 
@@ -54,11 +54,11 @@ brew uninstall --cask pistachio-desktop  # remove (wallet config preserved)
 
 ## Verification
 
-Every release artifact ships with a SHA256 checksum and (when enabled) an Ed25519 provenance receipt signed by `drm3/releases/signer`. The install script and the Homebrew formula both check the binary against its published SHA256 before installing it, and stop on a missing or mismatched checksum. Public keys: [status.drm3.network/.well-known/drm3-keys.json](https://status.drm3.network/.well-known/drm3-keys.json).
+Every release binary ships with a SHA256 checksum file beside it. The install script and the Homebrew formula both check the binary against its published SHA256 before installing it, and stop on a missing or mismatched checksum. A signed receipt file is published beside each asset as well; no shipped tool reads it today. See [SIGNING.md](../../SIGNING.md) for exactly what is checked.
 
 ## Capacity & passes
 
-Claim your free **Starter** pass for 20 MOR stake capacity. NFT passes add more — see [drm3.xyz](https://drm3.xyz).
+Claim your free **Starter** pass for 20 MOR stake capacity. NFT passes add more - see [drm3.xyz](https://drm3.xyz).
 
 Contract: [`0x3a29929e97DF8a2EB515e6a35da5f019c91ECA43`](https://basescan.org/address/0x3a29929e97DF8a2EB515e6a35da5f019c91ECA43) on Base.
 

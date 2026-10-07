@@ -1,8 +1,8 @@
 # AI Text Analyzer
 
-`@drm3/ai-text-analyzer` — heuristic AI-generated-text detector. Zero LLM cost, deterministic scoring. Used inside the World News RAG ingestion pipeline to score article authenticity before signing.
+`@drm3/ai-text-analyzer` - heuristic AI-generated-text detector. Zero LLM cost, deterministic scoring. Used inside the World News RAG ingestion pipeline to score article authenticity before signing.
 
-**Latest:** `ai-text-analyzer-v1.1.0`
+**Latest:** `ai-text-analyzer-v1.2.0`
 
 ## Install
 
@@ -10,10 +10,10 @@
 npm install @drm3/ai-text-analyzer
 ```
 
-Or download the tarball from [the release](https://github.com/DRM3Labs/drm3-releases/releases/tag/ai-text-analyzer-v1.1.0) and install locally:
+Or download the tarball from [the release](https://github.com/DRM3Labs/drm3-releases/releases/tag/ai-text-analyzer-v1.2.0) and install locally:
 
 ```bash
-npm install ./drm3-ai-text-analyzer-1.1.0.tgz
+npm install ./drm3-ai-text-analyzer-1.2.0.tgz
 ```
 
 ## Quick start
@@ -27,7 +27,7 @@ const result = analyze('Some text to score.');
 
 ## Verification
 
-Each release ships a SHA256 checksum file and an Ed25519 provenance receipt signed by `drm3/releases/signer`. Public keys: [status.drm3.network/.well-known/drm3-keys.json](https://status.drm3.network/.well-known/drm3-keys.json).
+Each release ships a SHA256 checksum file and a signed receipt file beside the tarball. Compare the tarball's SHA256 against the checksum file before installing. No shipped tool reads the receipt today; see [SIGNING.md](../../SIGNING.md).
 
 ## License
 
