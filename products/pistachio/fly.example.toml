@@ -1,4 +1,4 @@
-# Pistachio Gateway — Fly.io deployment template
+# Pistachio Gateway - Fly.io deployment template
 # Usage: fly deploy --config fly.example.toml --image drm3/pistachio:latest
 #
 # Before deploying, set your secrets:

@@ -2,7 +2,7 @@
 # Install: brew tap drm3labs/drm3 && brew install pistachio
 
 class Pistachio < Formula
-  desc "Pistachio — DRM3's Morpheus-compatible P2P inference client (CLI only)"
+  desc "Pistachio - DRM3's Morpheus-compatible P2P inference client (CLI only)"
   homepage "https://drm3.network"
   version "0.18.8"
   license "LicenseRef-Proprietary"

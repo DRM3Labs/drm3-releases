@@ -16,10 +16,10 @@ Installs the desktop app + bundled `pistachio` CLI. Homebrew removes the macOS q
 
 DMG images and Tauri update bundles are attached to each release:
 
-- `Pistachio_<version>_aarch64.dmg` — Apple Silicon
-- `Pistachio_<version>_x64.dmg` — Intel
-- `Pistachio_<version>_aarch64.app.tar.gz` + `.sig` — Tauri auto-update payload
-- `Pistachio_<version>_x64.app.tar.gz` + `.sig` — Tauri auto-update payload
+- `Pistachio_<version>_aarch64.dmg` - Apple Silicon
+- `Pistachio_<version>_x64.dmg` - Intel
+- `Pistachio_<version>_aarch64.app.tar.gz` + `.sig` - Tauri auto-update payload
+- `Pistachio_<version>_x64.app.tar.gz` + `.sig` - Tauri auto-update payload
 
 See: [https://github.com/DRM3Labs/drm3-releases/releases](https://github.com/DRM3Labs/drm3-releases/releases)
 

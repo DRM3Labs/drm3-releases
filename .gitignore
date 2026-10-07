@@ -3,10 +3,10 @@ CLAUDE.md
 # OS
 .DS_Store
 
-# No sourcemaps — proprietary source
+# No sourcemaps - proprietary source
 *.map
 
-# secrets — never commit
+# secrets - never commit
 .env
 .env.*
 !.env*.example

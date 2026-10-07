@@ -1,6 +1,6 @@
 # DRM3 Provenance
 
-`drm3-provenance` — cryptographic proof of work for the AI age. Ed25519 attestation receipts, Merkle rollups, and trust aggregation.
+`drm3-provenance` - cryptographic proof of work for the AI age. Ed25519 attestation receipts, Merkle rollups, and trust aggregation.
 
 **Latest:** `provenance-v0.4.1`
 
@@ -94,7 +94,7 @@ Every release artifact ships with a `.receipt.json` file signed by the DRM3 rele
 
 ```typescript
 const receipt = Receipt.fromJson(receiptJson);
-console.log(receipt.verify()); // true — signature is valid
+console.log(receipt.verify()); // true - signature is valid
 console.log(receipt.metadata()); // release metadata (product, version, sha256)
 ```
 

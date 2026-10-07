@@ -203,4 +203,4 @@ Mint passes directly from the Wallet page in your dashboard, or at [nft.drm3.xyz
 
 ---
 
-Pistachio v0.20.0 — DRM3 Labs Corp.
+Pistachio v0.20.0 - DRM3 Labs Corp.

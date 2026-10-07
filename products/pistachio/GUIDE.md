@@ -29,13 +29,13 @@ Works on x86_64 and ARM64 (auto-detected). The script checks the binary against 
 ### Windows (via WSL2)
 
 ```powershell
-# PowerShell as admin — one time
+# PowerShell as admin - one time
 wsl --install
 ```
 
 Restart your computer, open Ubuntu from the Start menu, then run the Linux install command above.
 
-WSL2 forwards ports automatically — open `http://localhost:19377` in your Windows browser.
+WSL2 forwards ports automatically - open `http://localhost:19377` in your Windows browser.
 
 ### Chromebook
 
@@ -51,7 +51,7 @@ pistachio --version
 
 ## 2. Set Up Your Wallet
 
-Pistachio uses your Ethereum wallet as your identity. Your private key never leaves your machine — it's stored locally with restricted file permissions and is used to sign requests.
+Pistachio uses your Ethereum wallet as your identity. Your private key never leaves your machine - it's stored locally with restricted file permissions and is used to sign requests.
 
 ### If you already have a wallet
 
@@ -84,7 +84,7 @@ cast wallet new
 
 **Important:** This wallet controls your MOR stake and your identity on the network. Back up your seed phrase. If you lose access to this wallet, you lose access to any staked MOR.
 
-**Private key is CLI-only.** There is no way to enter it through the web dashboard — this is intentional for security. The dashboard will show a setup screen directing you to the CLI if no key is configured.
+**Private key is CLI-only.** There is no way to enter it through the web dashboard - this is intentional for security. The dashboard will show a setup screen directing you to the CLI if no key is configured.
 
 ---
 
@@ -159,11 +159,11 @@ Follow the prompts. Requires ETH on Base for gas.
 
 ### Upgrade passes
 
-NFT passes are additive — each one increases your max stake capacity:
+NFT passes are additive - each one increases your max stake capacity:
 
 | Pass | Adds | Total Capacity | Cost |
 |------|------|----------------|------|
-| Starter (free) | — | 20 MOR | Free (claim required) |
+| Starter (free) | - | 20 MOR | Free (claim required) |
 | Bronze | +200 | 220 MOR | 5 MOR |
 | Silver | +1,000 | 1,020 MOR | 20 MOR |
 | Gold | +5,000 | 5,020 MOR | 80 MOR |
@@ -210,7 +210,7 @@ curl http://localhost:19377/inference/v1/chat/completions \
   }'
 ```
 
-No API key required in local mode — your wallet is your identity.
+No API key required in local mode - your wallet is your identity.
 
 ---
 
@@ -276,7 +276,7 @@ You need to claim your free pass first. Go to [drm3.network/claim](https://drm3.
 
 ### "Insufficient MOR balance"
 
-You need MOR tokens on the **Base** network. If you have MOR on Ethereum mainnet or Arbitrum, it won't work — you need to bridge it to Base.
+You need MOR tokens on the **Base** network. If you have MOR on Ethereum mainnet or Arbitrum, it won't work - you need to bridge it to Base.
 
 ### "Insufficient ETH for gas"
 
@@ -359,4 +359,4 @@ Visit [status.drm3.network](https://status.drm3.network) to check if the network
 
 ---
 
-*[drm3.network](https://drm3.network) — DRM3 Labs Corp.*
+*[drm3.network](https://drm3.network) - DRM3 Labs Corp.*

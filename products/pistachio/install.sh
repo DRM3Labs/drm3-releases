@@ -1,5 +1,5 @@
 #!/bin/sh
-# Install Pistachio — DRM3's Morpheus-compatible P2P inference client
+# Install Pistachio - DRM3's Morpheus-compatible P2P inference client
 # Works on: macOS (ARM/Intel), Linux (x86_64), Chromebook (via Linux/Crostini)
 #
 # Usage: curl -fsSL https://raw.githubusercontent.com/drm3labs/drm3-releases/main/products/pistachio/install.sh | sh
@@ -111,7 +111,7 @@ main() {
   echo "  pistachio config set private-key  # Connect your wallet"
   echo "  pistachio serve                   # Dashboard at http://localhost:19377"
   echo ""
-  echo "SDK key is auto-provisioned from your wallet — no manual setup needed."
+  echo "SDK key is auto-provisioned from your wallet - no manual setup needed."
   echo ""
 }
 
