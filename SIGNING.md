@@ -1,87 +1,48 @@
-# Signing
+# Signing and verification
 
-DRM3 uses two independent signing schemes. They serve different purposes. Don't confuse them.
+This page describes the checks that run when you install a DRM3 release today. Nothing here is a promise about a check you cannot run yourself.
 
-## Scheme A — Ed25519 data-provenance receipts
+## What the Pistachio CLI installer checks
 
-**Purpose:** any binary or data output DRM3 ships is accompanied by a Receipt signed with Ed25519. Consumers verify by comparing the receipt's `public_key` against the authoritative registry.
+`products/pistachio/install.sh` downloads one binary (`pistachio-<os>-<arch>`) from a GitHub release on this repository, then:
 
-| Aspect | Value |
-|---|---|
-| Public key registry | https://status.drm3.network/.well-known/drm3-keys.json |
-| Algorithm | Ed25519 (raw, not via minisign wrapper) |
-| Signer tool | internal release signing binary |
-| Verify tool (users) | `scripts/verify-release.sh` |
-| Private key | derived per-product from a signing secret (path varies per SKU) |
-| Key location | local developer machine / secure vault — never in any repo |
+1. Downloads `<binary>.sha256` from the same release.
+2. Reads the first field of that file and requires it to be a 64-character hex SHA256 value.
+3. Computes the SHA256 of the downloaded binary with `sha256sum` or `shasum -a 256`.
+4. Compares the two. On a missing checksum file, a malformed value, no SHA256 tool, or a mismatch, the installer prints the reason and exits 1 without installing anything.
 
-**Active for:** Pistachio CLI binaries, Connor, Open-Signals, News-RAG, RunsWith.
+That is the whole check. The checksum and the binary come from the same release, so this check proves the download arrived intact and matches what was uploaded to that release. It does not prove who uploaded it.
 
-**Pistachio CLI flow, end-to-end:**
+## What the Homebrew formula checks
 
-1. The release script builds the four platform binaries.
-2. If the signing secret is configured, the script produces `{binary}.receipt.json` next to each artifact.
-3. Receipt is uploaded as a release asset alongside the binary + `.sha256`.
-4. Users run `scripts/verify-release.sh /path/to/binary` — it downloads the receipt, looks up the signer's pubkey in the registry, verifies the signature.
+`Formula/pistachio.rb` carries a SHA256 for each platform binary in the formula itself. Homebrew refuses to install a download whose hash does not match the formula. The formula is pinned to one version and is updated by a commit to this repository, so the hash you compare against comes from this repository, not from the release.
 
-A receipt looks like:
+## What the desktop auto-updater checks
 
-```json
-{
-  "kind": "release.binary",
-  "service": "pistachio",
-  "version": "0.9.45",
-  "platform": "darwin-arm64",
-  "git_hash": "...",
-  "sha256": "...",
-  "signed_at": "...",
-  "signature": "...",
-  "public_key": "ed25519:5192708fc4d23fa6c591c5d40463259abc93753e5fcdfb8bd9a80a5d81225a26"
-}
-```
+Pistachio Desktop is a Tauri app. Each release attaches `Pistachio_<version>_<arch>.app.tar.gz` and a matching `.sig` (minisign format). The manifest at `update/pistachio-desktop.json` lists the current version, each bundle's download URL, and each `.sig` file's contents.
 
-## Scheme B — Tauri minisign (desktop auto-updater)
+On launch and on "Check for Updates", the app reads that manifest. When the manifest version is newer than the installed one, it downloads the bundle and verifies the signature against the public key built into the app. If verification fails, the update is rejected and the installed version stays in place.
 
-**Purpose:** Tauri's updater refuses to install a bundle it can't verify against a known pubkey. This prevents a hijacked update channel from pushing malicious binaries. Nothing to do with data provenance — purely bundle integrity for the auto-update pipeline.
+## Receipt files
 
-| Aspect | Value |
-|---|---|
-| Public key | embedded in the desktop app configuration under `plugins.updater.pubkey` (base64 minisign format) |
-| Manifest | `update/pistachio-desktop.json` in this repo |
-| Algorithm | Ed25519 via minisign wrapper |
-| Signer tool | Tauri build (produces `.app.tar.gz` + `.sig`) |
-| Private key | release signing key stored outside the repository |
-| Backup | secure vault |
-
-**Active for:** Pistachio Desktop (post-v0.9.45).
-
-**Pistachio Desktop release flow, end-to-end:**
-
-1. The release script bumps versions, builds and signs the desktop bundle, uploads the `.app.tar.gz` + `.sig` + `.dmg` to a `pistachio-desktop-v$VERSION` release on this repo.
-2. The same script rewrites `update/pistachio-desktop.json` with the new version, download URL, and the `.sig` file's contents.
-3. The desktop app polls the manifest URL on launch + on "Check for Updates". When `manifest.version > local_version`, it downloads the bundle, verifies the `.sig` against the embedded pubkey, installs, and relaunches.
-4. If verification fails, install is rejected — user stays on current version.
-
-A manifest looks like:
+Many release assets have a `<asset>.receipt.json` beside them. A receipt is an Ed25519-signed record with these fields:
 
 ```json
 {
-  "version": "0.9.45",
-  "notes": "Pistachio Desktop v0.9.45",
-  "pub_date": "2026-04-17T20:00:00Z",
-  "platforms": {
-    "darwin-aarch64": {
-      "url": "https://github.com/drm3labs/drm3-releases/releases/download/pistachio-desktop-v0.9.45/Pistachio_0.9.45_aarch64.app.tar.gz",
-      "signature": "untrusted comment: signature from tauri secret key\n..."
-    }
-  }
+  "id": "rcpt_...",
+  "action": "release.binary",
+  "timestamp": "2026-06-27T03:33:13Z",
+  "input_hash": "sha256:...",
+  "output_hash": "sha256:...",
+  "signature": "ed25519:...",
+  "public_key": "ed25519:..."
 }
 ```
 
-## When you are touching signing
+The signing key is listed under the Pistachio entry of the public key registry at [status.drm3.network/.well-known/drm3-keys.json](https://status.drm3.network/.well-known/drm3-keys.json).
 
-- **Never commit a private key to any repo.** Both schemes' privkeys live outside the working tree.
-- **Never reuse a Scheme A key for Scheme B or vice versa.** Different algorithms, different threat models, different key registries.
-- **Rotation cost is asymmetric.** Scheme A rotation is harmless (registry is live, consumers re-fetch). Scheme B rotation breaks every installed client on a plugin-updater-enabled version — time it with a hard version bump that forces manual re-install.
-- **If you see empty signatures or a stale URL in `update/*.json`, the release script didn't run or failed.** Don't ship a bundle while the manifest is broken — Tauri will reject the install and the failure is silent on most clients.
-- **The auto-updater check happens on app launch and on "Check for Updates" in the tray.** The React UI also displays a persistent banner via `UpdateBanner.tsx`. All three paths converge on the same manifest fetch.
+Today no installer, formula or script in this repository reads a receipt, and the `output_hash` in a receipt is not the SHA256 of the asset it sits beside. A receipt is a record that the release step ran under a listed key. It is not, today, a way to verify the binary on your disk. Use the checksum checks above for that.
+
+## What a signature means
+
+A valid signature or matching checksum shows attribution and integrity: the file came from the stated release and arrived unchanged. It does not show that the software is correct or safe. Read the release notes before you run anything.

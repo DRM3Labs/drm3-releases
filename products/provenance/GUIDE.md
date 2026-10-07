@@ -235,7 +235,7 @@ DRM3 Labs operates the signing infrastructure for its products. 30 active signin
 | Open Signals | `signals-3p/{source}` | Government and public data fetches |
 | Cashew | `cashew/cache` | Morpheus blockchain cache responses |
 | RunsWith | `runswith/analyst` | Service fingerprinting and migration detection |
-| Release signer | `drm3/releases/signer` | Binary releases |
+| Release signer | the `pistachio` entry in the key registry | Pistachio release receipts (see [SIGNING.md](../../SIGNING.md)) |
 
 Every key is independently verifiable. The public keys are published at `https://status.drm3.network/.well-known/drm3-keys.json`.
 
